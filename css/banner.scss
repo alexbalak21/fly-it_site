@@ -1,0 +1,32 @@
+.banner {
+    margin-top: 60px;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-image: url("/img/jet.jpg");
+    background-color: #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .callToAction {
+        height: fit-content;
+        width: 600px;
+        border-radius: 6px;
+        background-color: #000000b0;
+        padding: 20px;
+
+        h1 {
+            text-align: center;
+            color: var(--foreground);
+            font-size: 38px;
+        }
+    }
+    .button-wrapper {
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+    }
+    button {
+        font-weight: bold;
+    }
+}

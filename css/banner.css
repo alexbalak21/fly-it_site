@@ -1,0 +1,31 @@
+.banner {
+  margin-top: 60px;
+  width: 100%;
+  height: calc(100vh - 60px);
+  background-image: url("/img/jet.jpg");
+  background-color: #cccccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .callToAction {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 600px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.6901960784);
+  padding: 20px;
+}
+.banner .callToAction h1 {
+  text-align: center;
+  color: var(--foreground);
+  font-size: 38px;
+}
+.banner .button-wrapper {
+  width: 100%;
+  text-align: center;
+  margin: 20px;
+}
+.banner button {
+  font-weight: bold;
+}/*# sourceMappingURL=banner.css.map */

@@ -4,17 +4,96 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/style.css" />
+        <script
+            src="https://kit.fontawesome.com/6502c70df0.js"
+            crossorigin="anonymous"
+        ></script>
         <script src="js/script.js" defer></script>
         <title>Fly-It</title>
     </head>
     <body>
-        <nav>
-            <a href="">Accueil</a>
-            <a href="">Valeurs</a>
-            <a href="">Technologies</a>
-            <a href="">Équipe</a>
-            <a href="">Carrière</a>
-            <a href="">Contact</a>
-        </nav>
+        <header>
+            <a class="logo" href=""><img src="img/logo.png" alt="logo" /></a>
+            <label class="hamburger-menu"
+                ><input type="checkbox" id="nav-toggle"
+            /></label>
+            <nav>
+                <ul>
+                    <li><a href="">Accueil</a></li>
+                    <li><a href="">Valeurs</a></li>
+                    <li><a href="">Technologies</a></li>
+                    <li><a href="">Équipe</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="banner">
+            <div class="callToAction">
+                <h1>
+                    BIENVENUE CHEZ FLY'IT, L'ESN QUI FAIT DÉCOLLER VOS PROJETS
+                </h1>
+                <div class="button-wrapper">
+                    <button class="button">Rejoins la team</button>
+                </div>
+            </div>
+        </section>
+        <section class="values">
+            <link rel="stylesheet" href="css/values.css" />
+            <div>
+                <div class="icon-box">
+                    <span><i class="fa-solid fa-heart"></i></span>
+                </div>
+                <h1>Bienveillance</h1>
+                <p>
+                    Nous privilégions le bien-être de nos collaborateurs au
+                    détriment du capital. Nous te trouvons une mission à la
+                    hauteur de tes aspirations. Nous te rémunérons en se basant
+                    sur la haute fourchette des salaires.
+                </p>
+            </div>
+            <div>
+                <div class="icon-box">
+                    <span><i class="fa-solid fa-eye"></i></span>
+                </div>
+                <h1>Transparence</h1>
+                <p>
+                    Nous entretenons une relation de confiance avec tous les
+                    acteurs de la chaîne. Que ce soit avec nos consultants, nos
+                    clients ou nos partenaires, nous mettons un point d'honneur
+                    à être totalement clair sur tous les points qui nous lient
+                    les uns aux autres.
+                </p>
+            </div>
+            <div>
+                <div class="icon-box">
+                    <span><i class="fa-solid fa-rocket"></i></span>
+                </div>
+                <h1>Accompagnement</h1>
+                <p>
+                    Des formations et un suivi pour t'accompagner dans ton
+                    évolution de carrière. Tu pourras également transmettre tes
+                    compétences grâce à des formations rémunérées sous forme de
+                    séminaires.
+                </p>
+            </div>
+        </section>
+        <section class="technologies">
+            <link rel="stylesheet" href="css/technologies.css" />
+            <h1>Nos technologies</h1>
+            <p>
+                Chez Fly’IT, nous sommes très attentifs aux évolutions
+                techniques. Nous veillons à nous positionner sur les langages du
+                moment, en nous tournant vers les frameworks les plus récents
+                (.Net, Java, PHP, VueJs, Angular, React, etc).
+            </p>
+            <div class="img-container">
+                <img src="img/java.webp" alt="java" />
+
+                <img src="img/angular.webp" alt="angular" />
+
+                <img src="img/net.webp" alt="ms-net" />
+            </div>
+        </section>
     </body>
 </html>

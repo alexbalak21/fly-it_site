@@ -1,0 +1,28 @@
+:root {
+    --primary: #232142;
+    --secondary: #57ffdc;
+    --icon-size: 50px;
+}
+
+.technologies {
+    text-align: center;
+    background-color: var(--secondary);
+    & h1 {
+        padding: 16px 0;
+        font-size: 40px;
+        color: var(--primary);
+    }
+    & p {
+        color: var(--primary);
+        padding-bottom: 24px;
+    }
+    & .img-container {
+        display: flex;
+        justify-content: center;
+    }
+    & img {
+        width: 300px;
+        margin: 0 40px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+}
