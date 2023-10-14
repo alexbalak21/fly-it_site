@@ -5,22 +5,40 @@
     --icon-size: 50px;
     --icon-size: 75px;
     --gery: #54595f;
+    --swiper-theme-color: #232142;
 }
 
-.partenaires {
+.partners {
     background-color: var(--secondary);
+    height: 400px;
     text-align: center;
+    padding-bottom: 10px;
+
+    & img {
+        background-color: var(--tertiary);
+        border-radius: 8px;
+    }
 
     & h1 {
         color: var(--primary);
         font-size: 44px;
+        margin-bottom: 40px;
+        padding-top: 20px;
     }
+}
 
-    & img {
-        width: 240px;
-        height: 240px;
-        background-color: var(--tertiary);
-        border-radius: 10px;
-        margin: 8px;
-    }
+.swiper {
+    width: calc(240px * 3 + (9px * 2));
+    height: 240px;
+}
+
+.swiper-slide {
+    width: 240px !important;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

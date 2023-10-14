@@ -9,6 +9,13 @@
             crossorigin="anonymous"
         ></script>
         <script src="js/script.js" defer></script>
+        <!-- Link Swiper's CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+        />
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
         <title>Fly-It</title>
     </head>
     <body>
@@ -229,20 +236,58 @@
                 </div>
             </div>
         </section>
-        <section class="partenaires">
+        <section class="partners">
             <h1>Nos partenaires</h1>
-            <link rel="stylesheet" href="css/partners.css" />
-            <div class="img-container"></div>
-            <img src="img/partners/CGI.png" alt="CGI" />
-            <img src="img/partners/edf.png" alt="EDF" />
-            <img
-                src="img/partners/Little-Big-Connection.png"
-                alt="LittleBigConnectiion"
-            />
-            <img
-                src="img/partners/ministere-du-numerique.png"
-                alt="ministere-du-numerique"
-            />
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <img class="swiper-slide" src="img/partners/CGI.png" />
+                    <img class="swiper-slide" src="img/partners/edf.png" />
+                    <img class="swiper-slide" src="img/partners/havana.png" />
+                    <img
+                        class="swiper-slide"
+                        src="img/partners/Hi-Cannes.png"
+                    />
+                    <img class="swiper-slide" src="img/partners/Idrac.png" />
+                    <img
+                        class="swiper-slide"
+                        src="img/partners/Little-Big-Connection.png"
+                    />
+                    <img class="swiper-slide" src="img/partners/Luckyou.png" />
+                    <img
+                        class="swiper-slide"
+                        src="img/partners/ministere-du-numerique.png"
+                    />
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <!-- Link Swiper's CSS -->
+                <link
+                    rel="stylesheet"
+                    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+                />
+                <!-- CUSTOM CSS  -->
+                <link rel="stylesheet" href="css/partners.css" />
+                <!-- Swiper JS -->
+                <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+            </div>
+            <!-- Initialize Swiper -->
+            <script>
+                const swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 3,
+                    spaceBetween: 8,
+                    freeMode: true,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                })
+            </script>
         </section>
     </body>
 </html>
