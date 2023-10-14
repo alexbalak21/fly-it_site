@@ -1,0 +1,35 @@
+:root {
+    --primary: #232142;
+    --secondary: #57ffdc;
+    --tertiary: #fff;
+    --icon-size: 50px;
+    --icon-size: 75px;
+    --gery: #54595f;
+}
+
+.nombres {
+    background-color: var(--secondary);
+    color: var(--primary);
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & div {
+        width: 200px;
+        text-align: center;
+        padding: 10px;
+        margin: 0 80px;
+    }
+    & span {
+        font-size: 69px;
+        font-weight: bold;
+        text-shadow: 9px 15px 10px rgba(0, 0, 0, 0.3);
+    }
+    & h4 {
+        text-align: center;
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 2.5;
+        color: var(--gery);
+    }
+}
