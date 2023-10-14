@@ -16,7 +16,7 @@
         padding: 10px;
     }
 }
-.icon-box {
+.values .icon-box {
     text-align: center;
     margin-top: calc(var(--icon-size) * -1);
     margin-bottom: 20px;

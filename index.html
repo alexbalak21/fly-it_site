@@ -13,7 +13,9 @@
     </head>
     <body>
         <header>
-            <a class="logo" href=""><img src="img/logo.png" alt="logo" /></a>
+            <a class="logo" id="logo" href=""
+                ><img src="img/logo.png" alt="logo"
+            /></a>
             <label class="hamburger-menu"
                 ><input type="checkbox" id="nav-toggle"
             /></label>
@@ -34,7 +36,10 @@
                     BIENVENUE CHEZ FLY'IT, L'ESN QUI FAIT DÉCOLLER VOS PROJETS
                 </h1>
                 <div class="button-wrapper">
-                    <button class="button">Rejoins la team</button>
+                    <link rel="stylesheet" href="css/buttons.css" />
+                    <button class="button">
+                        Rejoins la team <i class="fa-solid fa-plane"></i>
+                    </button>
                 </div>
             </div>
         </section>
@@ -94,6 +99,65 @@
 
                 <img src="img/net.webp" alt="ms-net" />
             </div>
+        </section>
+        <section class="services">
+            <link rel="stylesheet" href="css/services.css" />
+            <h1>Nos services</h1>
+            <div class="services-container">
+                <div class="service">
+                    <div class="icon-box">
+                        <span><i class="fa-solid fa-code"></i></span>
+                    </div>
+                    <div>
+                        <h3>Coding</h3>
+                        <p>
+                            Notre équipe de développement est formée à la
+                            gestion de projets sophistiqués, aux techniques
+                            agile et à une démarche de projet sur mesure.
+                        </p>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="icon-box">
+                        <span><i class="fa-brands fa-connectdevelop"></i></span>
+                    </div>
+                    <div>
+                        <h3>Compétences fonctionnelles</h3>
+                        <p>
+                            Nous vous aidons à faire le lien entre la partie
+                            business et la partie technique du projet afin que
+                            vous puissiez visualiser votre projet.
+                        </p>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="icon-box">
+                        <span><i class="fa-solid fa-headset"></i></span>
+                    </div>
+                    <div>
+                        <h3>Assistance technique</h3>
+                        <p>
+                            Nos consultants interviennent sur des projets de
+                            transformation IT sur les domaines de compétences
+                            comme : Angular, JS, React, Symfony, etc.
+                        </p>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="icon-box">
+                        <span> <i class="fa-brands fa-medapps"></i></span>
+                    </div>
+                    <div>
+                        <h3>Applications tierces</h3>
+                        <p>
+                            Nos consultants vous accompagnent sur le pilotage et
+                            le support : (N1, N2 et N3). la maintenance et
+                            l'évolution de vos applications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p>Un besoin particulier ? Contactez notre équipe !</p>
         </section>
     </body>
 </html>
