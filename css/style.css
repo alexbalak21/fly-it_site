@@ -71,10 +71,13 @@ header .logo {
     margin: 0;
     outline: none;
     pointer-events: none;
+<<<<<<< HEAD
 }
 
 .hamburger-menu:hover {
     background-color: ;
+=======
+>>>>>>> 2eccb7e26c9a33f8cc297aa5c2985127e5470f44
 }
 
 .hamburger-menu:has(input:checked)::before {
