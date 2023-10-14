@@ -1,0 +1,30 @@
+:root {
+    --primary: #232142;
+    --secondary: #57ffdc;
+    --tertiary: #fff;
+    --icon-size: 50px;
+    --icon-size: 75px;
+    --gery: #54595f;
+}
+
+footer {
+    height: 70px;
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & span {
+        height: 40px;
+        width: 40px;
+        margin: 0 4px;
+        background-color: var(--secondary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+    }
+    & i {
+        font-size: 24px;
+    }
+}

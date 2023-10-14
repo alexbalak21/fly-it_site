@@ -1,0 +1,29 @@
+:root {
+    --primary: #232142;
+    --secondary: #57ffdc;
+    --tertiary: #fff;
+    --icon-size: 50px;
+    --icon-size: 75px;
+    --gery: #54595f;
+}
+
+.contact {
+    height: 240px;
+    background-image: url("/img/jet-sun.webp");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    & h1 {
+        color: var(--primary);
+        text-align: center;
+        padding-top: 20px;
+        font-size: 48px;
+    }
+    & p {
+        font-size: 24px;
+        color: var(--tertiary);
+        margin: 36px 0;
+    }
+}
