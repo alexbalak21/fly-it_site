@@ -1,0 +1,26 @@
+:root {
+    --primary: #232142;
+    --secondary: #57ffdc;
+    --tertiary: #fff;
+    --icon-size: 50px;
+    --icon-size: 75px;
+    --gery: #54595f;
+}
+
+.partenaires {
+    background-color: var(--secondary);
+    text-align: center;
+
+    & h1 {
+        color: var(--primary);
+        font-size: 44px;
+    }
+
+    & img {
+        width: 240px;
+        height: 240px;
+        background-color: var(--tertiary);
+        border-radius: 10px;
+        margin: 8px;
+    }
+}
