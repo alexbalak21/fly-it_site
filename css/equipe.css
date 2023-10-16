@@ -16,11 +16,13 @@
         color: var(--secondary);
         text-align: center;
         padding: 20px 0;
+        font-size: 40px;
     }
     & p {
         color: var(--tertiary);
         font-size: 18px;
         /* margin: 20px 0; */
+        padding: 0 16px;
     }
     & .members-container {
         display: flex;
@@ -60,7 +62,7 @@
             background-color: var(--secondary);
             color: var(--primary);
             padding: 8px;
-            padding-top: 14px;
+            padding: 13px 10px 8px;
             border-radius: 50%;
             & i {
                 font-size: 20px;
