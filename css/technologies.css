@@ -28,9 +28,19 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1020px) {
+    .technologies img {
+        margin: 30 20px;
+        width: 28%;
+    }
+}
+
+@media (max-width: 900px) {
     .technologies .img-container {
         flex-direction: column;
         align-items: center;
+    }
+    .technologies img {
+        width: 80%;
     }
 }
