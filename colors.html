@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Colors Palet</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+            section {
+                background-color: #28292b;
+                height: 100vh;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            section div {
+                width: 250px;
+                height: 250px;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin: 0 30px;
+            }
+
+            section div h2 {
+                cursor: pointer;
+            }
+
+            section div h2:last-child {
+                margin: 20px 0;
+            }
+
+            #primary {
+                background-color: #8bfbde !important;
+                background-color: rgb(139, 251, 222);
+            }
+
+            #secondary {
+                background-color: #090b40 !important;
+                background-color: rgb(9, 11, 64);
+                color: WhiteSmoke;
+            }
+
+            #blue {
+                background-color: #2f6ea6 !important;
+                background-color: rgb(47, 110, 166);
+            }
+            h1 {
+                color: white;
+                position: absolute;
+                top: 20%;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Click to on code to copy</h1>
+        <section>
+            <div id="primary">
+                <h2>#8bfbde</h2>
+                <h2>rgb(139, 251, 222)</h2>
+            </div>
+            <div id="secondary">
+                <h2>#090b40</h2>
+                <h2>rgb(9, 11, 64)</h2>
+            </div>
+            <div id="blue">
+                <h2>#2f6ea6</h2>
+                <h2>rgb(47, 110, 166)</h2>
+            </div>
+        </section>
+        <script>
+            const all_h2 = document.querySelectorAll("h2")
+
+            function copy_on_click(content = "color") {
+                navigator.clipboard.writeText(content)
+            }
+
+            all_h2.forEach((h2) =>
+                h2.addEventListener("click", () => {
+                    copy_on_click(h2.innerText)
+                    const color = h2.style.color
+                    h2.style.color = "#17B169"
+                    setTimeout(() => {
+                        h2.style.color = color
+                    }, 600)
+                })
+            )
+        </script>
+    </body>
+</html>
