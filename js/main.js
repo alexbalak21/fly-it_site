@@ -80,13 +80,13 @@
 // CUSTOM
 const nav_links = document.querySelectorAll(".navbar-collapse .nav-link")
 
-console.log(nav_links)
+console.log(window.location.pathname)
 
 nav_links.forEach((link) => {
     link.classList.remove("active")
-    console.log(link.href.split("/").pop())
     if (
         link.href.split("/").pop() === window.location.pathname.split("/").pop()
     )
         link.classList.add("active")
 })
+if (window.location.pathname === "/") nav_links[0].classList.add("active")
