@@ -44,7 +44,7 @@
 
 .btn.btn-primary,
 .btn.btn-outline-primary:hover {
-    color: var(--secondary);
+    /* color: var(--secondary); */
 }
 
 .btn.btn-lg.btn-secondary.btn-lg-square.back-to-top:hover {

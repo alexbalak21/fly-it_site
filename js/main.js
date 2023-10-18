@@ -78,7 +78,9 @@
 })(jQuery)
 
 // CUSTOM
-const nav_links = document.querySelectorAll(".navbar-collapse a")
+const nav_links = document.querySelectorAll(".navbar-collapse .nav-link")
+
+console.log(nav_links)
 
 nav_links.forEach((link) => {
     link.classList.remove("active")
