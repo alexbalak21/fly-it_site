@@ -210,6 +210,16 @@
     }
 }
 
+@media (max-width: 450px) {
+    .about .btn-container .btn {
+        margin-bottom: 16px !important;
+    }
+
+    .about .btn-container {
+        text-align: center;
+    }
+}
+
 .page-header {
     padding-top: 12rem;
     padding-bottom: 6rem;
