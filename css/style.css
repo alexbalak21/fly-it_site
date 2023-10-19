@@ -9,8 +9,14 @@
     --dark: #001d23;
 }
 
+/* GLOBAL TEMPLATE */
+
 .text-primary {
     color: var(--primary) !important;
+}
+
+.text-secondary {
+    color: var(--secondary) !important;
 }
 
 .back-to-top {
