@@ -7,6 +7,7 @@
     --secondary: #090b40;
     --light: #f8f8f9;
     --dark: #001d23;
+    --gery: #787878;
 }
 
 /* GLOBAL TEMPLATE */
@@ -17,6 +18,10 @@
 
 .text-secondary {
     color: var(--secondary) !important;
+}
+
+.text-tertiary {
+    color: #787878 !important;
 }
 
 .back-to-top {
