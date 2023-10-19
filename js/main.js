@@ -97,6 +97,7 @@ $(document).ready(function () {
     var silder = $(".owl-carousel")
     silder.owlCarousel({
         autoplay: true,
+        autoWidth: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: false,
         items: 1,
