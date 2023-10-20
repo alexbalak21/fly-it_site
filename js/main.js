@@ -44,8 +44,8 @@
         return false
     })
 
-    // Causes progress
-    $(".causes-progress").waypoint(
+    // techs. progress
+    $(".techs.-progress").waypoint(
         function () {
             $(".progress .progress-bar").each(function () {
                 $(this).css("width", $(this).attr("aria-valuenow") + "%")
