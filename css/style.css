@@ -333,7 +333,7 @@
 
 /*** Contact ***/
 .contact-banner .overlay {
-    width: 100%;
+    width: 100vw !important;
     height: 100%;
     background: rgba(var(--secondary-color), 0.8);
 }
