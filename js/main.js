@@ -80,8 +80,6 @@
 // CUSTOM
 const nav_links = document.querySelectorAll(".navbar-collapse .nav-link")
 
-console.log(window.location.pathname)
-
 nav_links.forEach((link) => {
     link.classList.remove("active")
     if (
