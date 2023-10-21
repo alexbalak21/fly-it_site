@@ -1,210 +1,34 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="ESN Lyon, Développeur Web Lyon, ESN spécialisée, Services Numériques Lyon, Société de Services en Ingénierie Informatique Lyon, Développeur Java Lyon, Développeur .NET Lyon" name="keywords">
-    <meta content="Fly'IT est une ESN lyonnaise dédiée à la concrétisation de vos projets numériques. Composée d'une équipe de développeurs passionnés, nous sommes votre partenaire privilégié pour tous vos besoins en ingénierie informatique à Lyon." name="description">
-    
-    <title>Fly'IT - ESN 3.0</title>
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="icon.jpg">
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries CSS -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="lib/owlcarousel/assets/owl.theme.default.min.css">
-
-    <!-- Custom CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-</head>
-
-
+    <?php
+    //GETTING THE HEADER AND PASSING $title
+    $title = "Fly'IT - ESN 3.0";
+    require_once("./components/head.php");
+    ?>
     <body>
         <!-- Spinner -->
-    <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center bg-white">
-        <div class="spinner-grow text-primary" role="status"></div>
-    </div>
-
-    <!-- NAVBAR -->
-    <div class="container-fluid fixed-top px-0 custom-nav wow fadeIn" data-wow-delay="0.1s">
-        <!-- Top Bar -->
-        <div class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex">
-            <div class="col-lg-6 px-5 text-start">
-                <a href="https://www.google.com/maps/place/55+Av.+Ren%C3%A9+Cassin,+69009+Lyon/data=!4m2!3m1!1s0x47f4eb7496a55165:0x14ce65420b6f18e1?sa=X&ved=2ahUKEwj_k9_axvqBAxWYVqQEHRVRDOcQ8gF6BAgPEAA">
-                    <small><i class="fa fa-map-marker-alt me-2"></i>55 ter Av. René Cassin, 69009 Lyon</small>
-                </a>
-                <a href="mailto:recrutement@fly-it.tech">
-                    <small class="ms-4"><i class="fa fa-envelope me-2"></i>recrutement@fly-it.tech</small>
-                </a>
-            </div>
-            <div class="col-lg-6 px-5 text-end">
-                <small>Suivez nous:</small>
-                <a class="text-white-50 ms-3" href="https://www.linkedin.com/company/fly-it-tech/">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a class="text-white-50 ms-3" href="https://www.instagram.com/flyittech/">
-                    <i class="fab fa-instagram"></i>
-                </a>
+        <div
+            id="spinner"
+            class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center bg-white"
+        >
+            <div class="spinner-grow text-primary" role="status">
             </div>
         </div>
+           <?php
+           // TOPBAR inculding NAVBAR
+           require_once ("./components/topbar.php");
 
-        <!-- Navbar Main -->
-        <nav id="top" class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-				<img class="brand-logo" src="img/logo.png" alt="Fly It Logo" style="width: 20%; height: 1%">
-			</a>
+           //CAROUSEL
+           require_once("./components/carousel.php");
 
-            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="index.html" class="nav-item nav-link active">Accueil</a>
-                    <a href="#about" class="nav-item nav-link">A propos</a>
-                    <a href="#tech" class="nav-item nav-link">Techs</a>
-                    <a href="#services" class="nav-item nav-link">Services</a>
-                    <a href="#team" class="nav-item nav-link">Équipe</a>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    <a href="#partners" class="nav-item nav-link">Partenaires</a>
-                </div>
-                <div class="d-none d-lg-flex ms-2">
-                    <a class="btn btn-outline-primary py-2 px-3" href="contact.html">
-                        Montez à bord
-                        <div class="d-inline-flex btn-sm-square bg-primary text-secondary rounded-circle ms-2">
-                            <i class="fa fa-arrow-right"></i>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </nav>
-    </div>
-        <!------------------------------------------------------------ NAVBAR END------------------------------------------------------------>
+           ?>
 
-        <!------------------------------------------------------------ Carousel Start------------------------------------------------------------>
-        <div class="container-fluid p-0 mb-5">
-            <div
-                id="header-carousel"
-                class="carousel slide"
-                data-bs-ride="carousel"
-            >
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="w-100" src="img/banner-1.jpg" alt="Image" />
-                        <div class="carousel-caption">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-7 pt-5">
-                                        <h1
-                                            class="display-4 text-white mb-3 animated slideInDown"
-                                        >
-                                            L'ESN qui accompagne discrètement mais sûrement vos projets vers leurs horizons les plus prometteurs
-                                        </h1>
-                                        <p
-                                            class="fs-5 text-white-50 mb-5 animated slideInDown"
-                                        >
-                                            Vos projets, avec notre accompagnement, trouvent leur chemin vers de nouveaux horizons
-                                        </p>
-                                        <a
-                                            class="btn btn-primary py-2 px-3 animated slideInDown text-secondary"
-                                            href="contact.html"
-                                        >
-                                            Montez à bord
-                                            <div
-                                                class="d-inline-flex btn-sm-square bg-secondary text-primary rounded-circle ms-2"
-                                            >
-                                                <i
-                                                    class="fa fa-arrow-right"
-                                                ></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img
-                            class="w-100"
-                            src="img/banner-2.jpeg"
-                            alt="Image"
-                        />
-                        <div class="carousel-caption">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-7 pt-5">
-                                        <h1
-                                            class="display-4 text-white mb-3 animated slideInDown"
-                                        >
-                                            Ensemble, transformons chaque ligne de code en une symphonie numérique, tout en façonnant l'avenir de la technologie
-                                        </h1>
-                                        <p
-                                            class="fs-5 text-white-50 mb-5 animated slideInDown"
-                                        >
-                                            Chaque défi technique est une énigme à résoudre. Joignez-vous à nous pour écrire les chapitres innovants de demain
-                                        </p>
-                                        <a
-                                            class="btn btn-primary py-2 px-3 animated slideInDown text-secondary"
-                                            href="contact.html"
-                                        >
-                                            Montez à Bord
-                                            <div
-                                                class="d-inline-flex btn-sm-square bg-secondary text-primary rounded-circle ms-2"
-                                            >
-                                                <i
-                                                    class="fa fa-arrow-right"
-                                                ></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#header-carousel"
-                    data-bs-slide="prev"
-                >
-                    <span
-                        class="carousel-control-prev-icon"
-                        aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Précédent</span>
-                </button>
-                <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#header-carousel"
-                    data-bs-slide="next"
-                >
-                    <span
-                        class="carousel-control-next-icon"
-                        aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Suivant</span>
-                </button>
-            </div>
-        </div>
-        <!------------------------------------------------------------ CAROUSEL END------------------------------------------------------------>
+
+      
 
         <!------------------------------------------------------------ ABOUT START------------------------------------------------------------>
-        <div class="container-xxl py-5 about">
-            <div class="container" id="about">
+        <section class="container-xxl py-5 about"  id="about">
+            <div class="container">
                 <div class="row g-5">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div
@@ -233,22 +57,75 @@
                                 class="bg-light border-bottom border-5 border-secondary rounded p-4 mb-4"
                             >
                                 <p class="text-dark mb-2">
-                                   Dans le grand ballet des aigles de l'ESN, notre trajectoire est précisément calibrée : 
-                                   Dans la vaste étendue du ciel de l'ESN, nous plongeons avec une visée infaillible : celle de privilégier avant tout le bien-être et l'accomplissement de nos valeureux pilotes. Tout comme un aviateur d'exception choisit avec soin son altitude de croisière, nous nous attelons à te confier des missions dignes de tes aspirations, te permettant de déployer tes ailes et de fendre le firmament. Car ton talent, semblable à un réacteur puissant, mérite une reconnaissance sans faille. Ainsi, nous t'assurons une rétribution à la mesure de ta bravoure, se positionnant parmi les plus compétitives de cette vaste arène céleste. Ensemble, propulsons-nous vers les cimes, dans l'élite de l'IT.
+                                    Dans le grand ballet des aigles de l'ESN,
+                                    notre trajectoire est précisément calibrée :
+                                    Dans la vaste étendue du ciel de l'ESN, nous
+                                    plongeons avec une visée infaillible : celle
+                                    de privilégier avant tout le bien-être et
+                                    l'accomplissement de nos valeureux pilotes.
+                                    Tout comme un aviateur d'exception choisit
+                                    avec soin son altitude de croisière, nous
+                                    nous attelons à te confier des missions
+                                    dignes de tes aspirations, te permettant de
+                                    déployer tes ailes et de fendre le
+                                    firmament. Car ton talent, semblable à un
+                                    réacteur puissant, mérite une reconnaissance
+                                    sans faille. Ainsi, nous t'assurons une
+                                    rétribution à la mesure de ta bravoure, se
+                                    positionnant parmi les plus compétitives de
+                                    cette vaste arène céleste. Ensemble,
+                                    propulsons-nous vers les cimes, dans l'élite
+                                    de l'IT.
                                 </p>
                             </div>
                             <div
                                 class="bg-light border-bottom border-5 border-secondary rounded p-4 mb-4"
                             >
                                 <p class="text-dark mb-2">
-                                    Naviguant avec Lumière et Loyauté: Dans le vaste océan de l'ESN, la transparence brille tel un phare inébranlable. Nous tissons, avec passion, une relation empreinte de confiance avec chaque navire croisant notre sillage. Qu'ils soient consultants, clients ou vaillants partenaires, nous assurons une vue panoramique sur chaque facette de notre voyage conjoint. Tout comme à bord d'une caravelle, où chaque compas et sextant est capital pour une navigation sans écueils, la limpidité de nos dialogues est le gage d'une alliance fructueuse. Avec nous, l'horizon est toujours pur, intègre et prometteur. Ensemble, hissons les voiles vers les cieux de l'IT, le cœur léger et l'esprit serein.
+                                    Naviguant avec Lumière et Loyauté: Dans le
+                                    vaste océan de l'ESN, la transparence brille
+                                    tel un phare inébranlable. Nous tissons,
+                                    avec passion, une relation empreinte de
+                                    confiance avec chaque navire croisant notre
+                                    sillage. Qu'ils soient consultants, clients
+                                    ou vaillants partenaires, nous assurons une
+                                    vue panoramique sur chaque facette de notre
+                                    voyage conjoint. Tout comme à bord d'une
+                                    caravelle, où chaque compas et sextant est
+                                    capital pour une navigation sans écueils, la
+                                    limpidité de nos dialogues est le gage d'une
+                                    alliance fructueuse. Avec nous, l'horizon
+                                    est toujours pur, intègre et prometteur.
+                                    Ensemble, hissons les voiles vers les cieux
+                                    de l'IT, le cœur léger et l'esprit serein.
                                 </p>
                             </div>
                             <div
                                 class="bg-light border-bottom border-5 border-secondary rounded p-4 mb-4"
                             >
                                 <p class="text-dark mb-2">
-                                    Vers les étoiles, guidés par l'entraide et l'ambition : Au cœur de l'immensité de l'ESN, s'élancer n'est que le début d'une aventure céleste. Garder le cap, tout en sachant esquisser des virages audacieux face à l'inconnu, est le véritable défi. C'est ainsi que nous prônons l'art de la guidance. Nous t'offrons des formations sur-mesure, sous le sceau d'une vigilance bienveillante, pour te permettre de dessiner avec audace ton sillage étoilé et d'atteindre les constellations les plus lointaines. Chaque pilote, dans sa singularité, détient une part du cosmos en lui. C'est pourquoi nous te donnons la scène pour illuminer d'autres de ton savoir lors de séminaires gratifiés. À nos côtés, chaque aurore est une invitation à apprendre, à s'élever et à guider d'autres astronautes vers leur destinée. Main dans la main, traversons l'infini de l'IT, animés par une ambition galactique et une fraternité interstellaire.
+                                    Vers les étoiles, guidés par l'entraide et
+                                    l'ambition : Au cœur de l'immensité de
+                                    l'ESN, s'élancer n'est que le début d'une
+                                    aventure céleste. Garder le cap, tout en
+                                    sachant esquisser des virages audacieux face
+                                    à l'inconnu, est le véritable défi. C'est
+                                    ainsi que nous prônons l'art de la guidance.
+                                    Nous t'offrons des formations sur-mesure,
+                                    sous le sceau d'une vigilance bienveillante,
+                                    pour te permettre de dessiner avec audace
+                                    ton sillage étoilé et d'atteindre les
+                                    constellations les plus lointaines. Chaque
+                                    pilote, dans sa singularité, détient une
+                                    part du cosmos en lui. C'est pourquoi nous
+                                    te donnons la scène pour illuminer d'autres
+                                    de ton savoir lors de séminaires gratifiés.
+                                    À nos côtés, chaque aurore est une
+                                    invitation à apprendre, à s'élever et à
+                                    guider d'autres astronautes vers leur
+                                    destinée. Main dans la main, traversons
+                                    l'infini de l'IT, animés par une ambition
+                                    galactique et une fraternité interstellaire.
                                 </p>
                             </div>
                             <p class="mb-5">
@@ -257,7 +134,7 @@
                             <div class="btn-container">
                                 <a
                                     class="btn btn-primary py-2 px-3 animated slideInDown text-secondary"
-                                    href="contact.html"
+                                    href="contact.php"
                                 >
                                     Montez à bord
                                     <div
@@ -271,11 +148,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!------------------------------------------------------------ About End------------------------------------------------------------>
 
         <!------------------------------------------------------------ TECH START------------------------------------------------------------>
-        <div class="container-xxl bg-light my-5 pb-3" id="tech">
+        <section class="container-xxl bg-light my-5 pb-3" id="tech">
             <div class="container py-5">
                 <div
                     class="text-center mx-auto mb-5 wow fadeInUp"
@@ -289,8 +166,13 @@
                     </div>
                     <h1>Une expertise qui s'adapte à vos besoins</h1>
                     <p>
-                        Chez Fly’IT, nous voguons au rythme des vents technologiques.
-                        À l'affût des courants innovants, nous hissons nos voiles vers les langages les plus en vogue, naviguant avec agilité parmi les frameworks avant-gardistes tels que .Net, Java, PHP, VueJs, Angular, React et bien d'autres. Embarquez avec nous pour une odyssée numérique sans cesse renouvelée.
+                        Chez Fly’IT, nous voguons au rythme des vents
+                        technologiques. À l'affût des courants innovants, nous
+                        hissons nos voiles vers les langages les plus en vogue,
+                        naviguant avec agilité parmi les frameworks
+                        avant-gardistes tels que .Net, Java, PHP, VueJs,
+                        Angular, React et bien d'autres. Embarquez avec nous
+                        pour une odyssée numérique sans cesse renouvelée.
                     </p>
                 </div>
                 <div class="row g-4 justify-content-center">
@@ -308,7 +190,15 @@
                                     <small>Java</small>
                                 </div>
                                 <h5 class="mb-3">Spring</h5>
-                                <p>Java, tel un avion de chasse agile, fend le ciel numérique avec une précision inégalée. Spring, son co-pilote ingénieux, optimise chaque manoeuvre, propulsant les projets vers des altitudes inédites. Ensemble, ils dominent l'espace de la programmation, rapides et sans turbulence</p>
+                                <p>
+                                    Java, tel un avion de chasse agile, fend le
+                                    ciel numérique avec une précision inégalée.
+                                    Spring, son co-pilote ingénieux, optimise
+                                    chaque manoeuvre, propulsant les projets
+                                    vers des altitudes inédites. Ensemble, ils
+                                    dominent l'espace de la programmation,
+                                    rapides et sans turbulence
+                                </p>
                             </div>
                             <div class="position-relative mt-auto">
                                 <img
@@ -333,7 +223,15 @@
                                     <small>PHP</small>
                                 </div>
                                 <h5 class="mb-3">Symfony</h5>
-                                <p>PHP, tel un jet expérimenté, virevolte avec aisance dans l'atmosphère du web. Symfony, son aile droite infaillible, renforce chaque trajectoire, conduisant les missions à des cieux encore inexplorés. En tandem, ils tracent des contrails lumineux dans l'arène de la programmation</p>
+                                <p>
+                                    PHP, tel un jet expérimenté, virevolte avec
+                                    aisance dans l'atmosphère du web. Symfony,
+                                    son aile droite infaillible, renforce chaque
+                                    trajectoire, conduisant les missions à des
+                                    cieux encore inexplorés. En tandem, ils
+                                    tracent des contrails lumineux dans l'arène
+                                    de la programmation
+                                </p>
                             </div>
                             <div class="position-relative mt-auto">
                                 <img
@@ -358,7 +256,16 @@
                                     <small>.Net</small>
                                 </div>
                                 <h5 class="mb-3">Core</h5>
-                                <p>.NET, semblable à un bombardier lourd doté d'une puissance redoutable, survole majestueusement l'empire du code. .NET Core, son réacteur innovant, propulse avec une vigueur renouvelée, perforant les nuages des défis technologiques. Ensemble, ils forment un duo de chasse, déployant une symphonie aérienne dans le concert de la programmation</p>
+                                <p>
+                                    .NET, semblable à un bombardier lourd doté
+                                    d'une puissance redoutable, survole
+                                    majestueusement l'empire du code. .NET Core,
+                                    son réacteur innovant, propulse avec une
+                                    vigueur renouvelée, perforant les nuages des
+                                    défis technologiques. Ensemble, ils forment
+                                    un duo de chasse, déployant une symphonie
+                                    aérienne dans le concert de la programmation
+                                </p>
                             </div>
                             <div class="position-relative mt-auto">
                                 <img
@@ -371,11 +278,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!------------------------------------------------------------ TECH END----------------------------------------------------------->
 
         <!------------------------------------------------------------ SERVICES START------------------------------------------------------------>
-        <div class="container-xxl py-5" id="services">
+        <section class="container-xxl py-5" id="services">
             <div class="container">
                 <div
                     class="text-center mx-auto mb-5 wow fadeInUp"
@@ -391,7 +298,12 @@
                         Notre expertise
                     </h1>
                     <p>
-                        Fly’IT, tel un escadron d'élite du numérique, est votre co-pilote dédié pour tous vos projets de développement aérien. Nos as du joystick, formés aux manœuvres technologiques les plus récentes, sont prêts à décoller. Avec une cartographie sur mesure, nous alignons nos vols à la parfaite trajectoire de vos ambitions.
+                        Fly’IT, tel un escadron d'élite du numérique, est votre
+                        co-pilote dédié pour tous vos projets de développement
+                        aérien. Nos as du joystick, formés aux manœuvres
+                        technologiques les plus récentes, sont prêts à décoller.
+                        Avec une cartographie sur mesure, nous alignons nos vols
+                        à la parfaite trajectoire de vos ambitions.
                     </p>
                 </div>
                 <div class="row g-4 justify-content-center">
@@ -409,9 +321,13 @@
                             />
                             <h4 class="mb-3">Coding</h4>
                             <p class="mb-4">
-                                Notre escadron de développement, aguerri aux missions les plus complexes, maîtrise avec brio les voltiges de l'agilité. Avec une précision chirurgicale, nous dessinons des plans de vol sur mesure, prêts à intercepter chaque défi avec une tactique infaillible.
+                                Notre escadron de développement, aguerri aux
+                                missions les plus complexes, maîtrise avec brio
+                                les voltiges de l'agilité. Avec une précision
+                                chirurgicale, nous dessinons des plans de vol
+                                sur mesure, prêts à intercepter chaque défi avec
+                                une tactique infaillible.
                             </p>
-
                         </div>
                     </div>
                     <div
@@ -428,7 +344,12 @@
                             />
                             <h4 class="mb-3">Assistance technique</h4>
                             <p class="mb-4">
-                                Nos pilotes de chasse numérique, déployant leurs ailes dans le vaste ciel de la transformation IT, plongent avec expertise dans des territoires tels qu'Angular, JS, React, Symfony, et au-delà. Chaque mission est une acrobatie technologique maîtrisée à la perfection.
+                                Nos pilotes de chasse numérique, déployant leurs
+                                ailes dans le vaste ciel de la transformation
+                                IT, plongent avec expertise dans des territoires
+                                tels qu'Angular, JS, React, Symfony, et au-delà.
+                                Chaque mission est une acrobatie technologique
+                                maîtrisée à la perfection.
                             </p>
                         </div>
                     </div>
@@ -447,7 +368,12 @@
                             />
                             <h4 class="mb-3">Analyse fonctionnelle</h4>
                             <p class="mb-5">
-                                Tel un tour de contrôle expert, nous établons la liaison entre les courants aériens du business et les pistes techniques de votre projet. Avec nous, chaque horizon est clairement défini, vous permettant d'avoir une vision panoramique de votre destination numérique.
+                                Tel un tour de contrôle expert, nous établons la
+                                liaison entre les courants aériens du business
+                                et les pistes techniques de votre projet. Avec
+                                nous, chaque horizon est clairement défini, vous
+                                permettant d'avoir une vision panoramique de
+                                votre destination numérique.
                             </p>
                         </div>
                     </div>
@@ -465,18 +391,23 @@
                             />
                             <h4 class="mb-3">Applications tierces</h4>
                             <p class="mb-4">
-                                Tels des copilotes aguerris, nos consultants vous guident dans le cockpit des applications tierces, assurant le pilotage et le support aux altitudes N1, N2 et N3. Avec une vigilance sans faille, nous veillons à la maintenance et à l'ascension continue de vos logiciels.
+                                Tels des copilotes aguerris, nos consultants
+                                vous guident dans le cockpit des applications
+                                tierces, assurant le pilotage et le support aux
+                                altitudes N1, N2 et N3. Avec une vigilance sans
+                                faille, nous veillons à la maintenance et à
+                                l'ascension continue de vos logiciels.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!------------------------------------------------------------ SERVICES END------------------------------------------------------------>
 
         <!------------------------------------------------------------ TEAM START------------------------------------------------------------>
 
-        <div id="team" class="container-xxl py-5">
+        <section id="team" class="container-xxl py-5">
             <div class="container">
                 <div
                     class="text-center mx-auto mb-5 wow fadeInUp"
@@ -494,16 +425,28 @@
                     </h1>
 
                     <p class="">
-                        Fly'IT, telle une escadrille d'élite conçue par un pilote vétéran pour des as du manche à balai passionnés, se compose de 8 aviateurs aux talents singuliers. Formant une formation en delta, ils combinent maestria technique, audace créative et un sens du service aussi précis que le verrouillage d'une cible.
+                        Fly'IT, telle une escadrille d'élite conçue par un
+                        pilote vétéran pour des as du manche à balai passionnés,
+                        se compose de 8 aviateurs aux talents singuliers.
+                        Formant une formation en delta, ils combinent maestria
+                        technique, audace créative et un sens du service aussi
+                        précis que le verrouillage d'une cible.
                     </p>
                 </div>
                 <div class="row g-4">
-					<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-						<div class="team-item position-relative">
-							<img class="img-fluid rounded-circle border border-primary" src="img/tarik.jpg" alt="Tarik GILANI" />
-							<div class="team-text bg-light text-center p-4">
-								<h5>Tarik GILANI</h5>
-								<p>CEO</p>
+                    <div
+                        class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div class="team-item position-relative">
+                            <img
+                                class="img-fluid rounded-circle border border-primary"
+                                src="img/tarik.jpg"
+                                alt="Tarik GILANI"
+                            />
+                            <div class="team-text bg-light text-center p-4">
+                                <h5>Tarik GILANI</h5>
+                                <p>CEO</p>
                                 <div class="team-social text-center">
                                     <a
                                         class="btn btn-square"
@@ -525,10 +468,17 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-						<div class="team-item position-relative">
-							<img class="img-fluid rounded-circle border border-primary" src="img/monia.jpg" alt="Monia" />
-							<div class="team-text bg-light text-center p-4">
+                    <div
+                        class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div class="team-item position-relative">
+                            <img
+                                class="img-fluid rounded-circle border border-primary"
+                                src="img/monia.jpg"
+                                alt="Monia"
+                            />
+                            <div class="team-text bg-light text-center p-4">
                                 <h5>Monia BOURAS</h5>
                                 <p>Business manager</p>
                                 <div class="team-social text-center">
@@ -552,10 +502,17 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-						<div class="team-item position-relative">
-							<img class="img-fluid rounded-circle border border-primary" src="img/lois.jpeg" alt="Loïs" />
-							<div class="team-text bg-light text-center p-4">
+                    <div
+                        class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div class="team-item position-relative">
+                            <img
+                                class="img-fluid rounded-circle border border-primary"
+                                src="img/lois.jpeg"
+                                alt="Loïs"
+                            />
+                            <div class="team-text bg-light text-center p-4">
                                 <h5>Loïs BARBE</h5>
                                 <p>Chargée de communication</p>
                                 <div class="team-social text-center">
@@ -580,10 +537,17 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-						<div class="team-item position-relative">
-							<img class="img-fluid rounded-circle border border-primary" src="img/robin.jpeg" alt="Robin" />
-							<div class="team-text bg-light text-center p-4">
+                    <div
+                        class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div class="team-item position-relative">
+                            <img
+                                class="img-fluid rounded-circle border border-primary"
+                                src="img/robin.jpeg"
+                                alt="Robin"
+                            />
+                            <div class="team-text bg-light text-center p-4">
                                 <h5>Robin GAIXET</h5>
                                 <p>Business manager</p>
                                 <div class="team-social text-center">
@@ -607,10 +571,17 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-						<div class="team-item position-relative">
-							<img class="img-fluid rounded-circle border border-primary" src="img/sarah.jpeg" alt="Sarah" />
-							<div class="team-text bg-light text-center p-4">
+                    <div
+                        class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div class="team-item position-relative">
+                            <img
+                                class="img-fluid rounded-circle border border-primary"
+                                src="img/sarah.jpeg"
+                                alt="Sarah"
+                            />
+                            <div class="team-text bg-light text-center p-4">
                                 <h5>Sarah JACQUET</h5>
                                 <p>Business manager</p>
                                 <div class="team-social text-center">
@@ -634,10 +605,17 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-						<div class="team-item position-relative">
-							<img class="img-fluid rounded-circle border border-primary" src="img/fatima.jpg" alt="Fati" />
-							<div class="team-text bg-light text-center p-4">
+                    <div
+                        class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div class="team-item position-relative">
+                            <img
+                                class="img-fluid rounded-circle border border-primary"
+                                src="img/fatima.jpg"
+                                alt="Fati"
+                            />
+                            <div class="team-text bg-light text-center p-4">
                                 <h5>Fatima ZAHRA EL HAJJL</h5>
                                 <p>Business developper</p>
                                 <div class="team-social text-center">
@@ -661,10 +639,17 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-						<div class="team-item position-relative">
-							<img class="img-fluid rounded-circle border border-primary" src="img/amazonia.jpg" alt="Amazonia" />
-							<div class="team-text bg-light text-center p-4">
+                    <div
+                        class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div class="team-item position-relative">
+                            <img
+                                class="img-fluid rounded-circle border border-primary"
+                                src="img/amazonia.jpg"
+                                alt="Amazonia"
+                            />
+                            <div class="team-text bg-light text-center p-4">
                                 <h5>Amazonia DONOSO</h5>
                                 <p>Business developper</p>
                                 <div class="team-social text-center">
@@ -688,10 +673,17 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-						<div class="team-item position-relative">
-							<img class="img-fluid rounded-circle border border-primary" src="img/faye.jpg" alt="Faye" />
-							<div class="team-text bg-light text-center p-4">
+                    <div
+                        class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div class="team-item position-relative">
+                            <img
+                                class="img-fluid rounded-circle border border-primary"
+                                src="img/faye.jpg"
+                                alt="Faye"
+                            />
+                            <div class="team-text bg-light text-center p-4">
                                 <h5>Faye VERKROOST</h5>
                                 <p>Business developper</p>
                                 <div class="team-social text-center">
@@ -716,7 +708,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!------------------------------------------------------------ TEAM END------------------------------------------------------------>
 
         <!------------------------------------------------------------ Contact Start------------------------------------------------------------>
@@ -739,7 +731,9 @@
                             </h1>
                             <p class="text-white-50 mb-0">
                                 Besoins d'une information ? <br />
-                                Déposez vos coordonnées à notre tour de contrôle, et notre escadrille prendra contact avec vous en un battement d'aile.
+                                Déposez vos coordonnées à notre tour de
+                                contrôle, et notre escadrille prendra contact
+                                avec vous en un battement d'aile.
                             </p>
                         </div>
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
@@ -807,7 +801,8 @@
                 </div>
             </div>
             <h1 class="text-center text-secondary">
-                Fly'IT, tel un avion de chasse infaillible, est le co-pilote de choix pour les titans de l'IT.
+                Fly'IT, tel un avion de chasse infaillible, est le co-pilote de
+                choix pour les titans de l'IT.
             </h1>
             <div class="owl-carousel owl-theme mt-5 mx-auto">
                 <div class="owl-item">
@@ -937,103 +932,14 @@
             </div>
         </section>
         <!------------------------------------------------------------ PARTNERS END------------------------------------------------------------>
+        <?php
+        //FOOTER
+        require_once("./components/footer.php");
 
-        <!------------------------------------------------------------ FOITER START------------------------------------------------------------>
-        <div
-            class="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn"
-            data-wow-delay="0.1s"
-        >
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-lg-4 col-md-6">
-                        <h1 class="fw-bold text-primary mb-4">
-                            <span class="text-white">Fly</span
-                            ><span class="text-primary">IT</span>
-                        </h1>
-                        <p>
-                            Une ESN tout droit sortie des hangars lyonnais, déployant ses ailes en un ballet dévoué au service de ses clients et de son escadron d'employés.
-                        </p>
-                        <div class="d-flex pt-2">
-                            <a
-                                class="btn btn-square me-0"
-                                href="https://fr.linkedin.com/company/fly-it-tech/"
-                                ><i class="fab fa-linkedin-in"></i
-                            ></a>
-                            <a
-                                class="btn btn-square me-1"
-                                href="https://www.instagram.com/flyittech/"
-                                ><i class="fab fa-instagram"></i
-                            ></a>
-                            <a
-                                class="btn btn-square me-0"
-                                href="https://www.youtube.com/channel/UC1HIatIkofuaOAXo9qqRuHg"
-                                ><i class="fab fa-youtube"></i
-                            ></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <h5 class="text-light mb-4">Adresse</h5>
-                        <p>
-                            <a
-                                href="https://www.google.com/maps/place/55+Av.+Ren%C3%A9+Cassin,+69009+Lyon/data=!4m2!3m1!1s0x47f4eb7496a55165:0x14ce65420b6f18e1?sa=X&ved=2ahUKEwj_k9_axvqBAxWYVqQEHRVRDOcQ8gF6BAgPEAA&ved=2ahUKEwj_k9_axvqBAxWYVqQEHRVRDOcQ8gF6BAgVEAI"
-                            >
-                                <small
-                                    ><i class="fa fa-map-marker-alt me-2"></i
-                                    ><span
-                                        >55 ter Av. René Cassin <br />
-                                        &nbsp;&nbsp;&nbsp;&nbsp; 69009
-                                        Lyon</span
-                                    >
-                                </small></a
-                            >
-                        </p>
-                        <p>
-                            <a href="tel:+33685224002"
-                                ><i class="fa fa-phone-alt me-3"></i
-                                >06.85.22.40.02</a
-                            >
-                        </p>
-                        <a href="mailto:recrutement@fly-it.tech">
-                            <p>
-                                <i class="fa fa-envelope me-3"></i
-                                >recrutement@fly-it.tech
-                            </p>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <h5 class="text-light mb-4">Liens Rapides</h5>
-                        <a class="btn btn-link" href="#about">À propos </a>
-                        <a class="btn btn-link" href="contact.html">Contact</a>
-                        <a class="btn btn-link" href="#tech">Techss</a>
-                        <a class="btn btn-link" href="#services">Équipe</a>
-                        <a class="btn btn-link" href="#services">Services</a>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid copyright">
-                <div class="container">
-                    <div class="row">
-                        <div
-                            class="col-md-6 text-center text-md-start mb-3 mb-md-0"
-                        >
-                            &copy;
-                            <a href="#">
-                                <span class="text-light">Fly</span
-                                ><span class="text-primary">IT</span></a
-                            >, All Right Reserved.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!------------------------------------------------------------ FOOTER END ------------------------------------------------------------>
+        //BACK TO THE TOP BUTTON
+        require_once("./components/back_to_the_top.php");
 
-        <!------------------------------------------------------------ Back to Top------------------------------------------------------------>
-        <a
-            href="#top"
-            class="btn btn-lg btn-secondary text-primary btn-lg-square back-to-top"
-            ><i class="bi bi-arrow-up"></i
-        ></a>
+        ?>
 
         <!------------------------------------------------------------ JavaScript Libraries------------------------------------------------------------>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
