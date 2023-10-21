@@ -6,7 +6,10 @@
                 data-bs-ride="carousel"
             >
                 <div class="carousel-inner" >
-                    <div class="carousel-item active">
+                    <div class="carousel-item active"
+                
+
+                    >
                         <img class="w-100" src="img/banner-1.jpg" alt="Image" />
                         <div class="carousel-caption">
                             <div class="container">

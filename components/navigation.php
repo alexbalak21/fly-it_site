@@ -21,7 +21,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto p-4 p-lg-0">
-                        <a href="index.html" class="nav-item nav-link active"
+                        <a href="/#header-carousel" class="nav-item nav-link active"
                             >Accueil</a
                         >
                         <a href="/#about" class="nav-item nav-link">A propos</a>
@@ -34,7 +34,7 @@
 
                         <a href="/#team" class="nav-item nav-link">Équipe</a>
 
-                        <a href="contact.html" class="nav-item nav-link"
+                        <a href="contact.php" class="nav-item nav-link"
                             >Contact</a
                         >
                         <a href="#partners" class="nav-item nav-link"
