@@ -9,7 +9,7 @@ $phone = "+33685224002";
 
 function team_card(string $img_src, string $name, string $position, string $lined_in, string $mail, string $phone):string {
     return "
-    <div class='col-lg-3 col-md-6 wow fadeInUp' data-wow-delay='0.1s'>
+    <div class='col-lg-3 col-md-6 mb-4 wow fadeInUp' data-wow-delay='0.1s'>
     <div class='team-item position-relative'>
         <img
             class='img-fluid rounded-circle border border-primary'
