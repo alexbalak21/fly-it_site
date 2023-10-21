@@ -4,7 +4,7 @@
                 class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn"
                 data-wow-delay="0.1s"
             >
-                <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <a href="/#header-carousel" class="navbar-brand ms-4 ms-lg-0">
                     <img
                         class="brand-logo"
                         src="img/logo.png"
@@ -34,12 +34,14 @@
 
                         <a href="/#team" class="nav-item nav-link">Équipe</a>
 
-                        <a href="contact.php" class="nav-item nav-link"
-                            >Contact</a
-                        >
+                   
                         <a href="#partners" class="nav-item nav-link"
                             >Partenaires
                         </a>
+
+                        <a href="contact.php" class="nav-item nav-link"
+                            >Contact</a
+                        >
 
                         <!-- <div class="nav-item dropdown">
                             <a

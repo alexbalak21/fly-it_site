@@ -38,7 +38,7 @@
                 <div class="row g-5">
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                         <div
-                            class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3"
+                            class="d-inline-block rounded-pill bg-secondary text-white py-1 px-3 mb-3"
                         >
                             Contactez-nous
                         </div>

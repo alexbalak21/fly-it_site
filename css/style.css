@@ -166,6 +166,8 @@
 
     .navbar .navbar-nav .nav-link {
         padding: 10px 0;
+        text-align: center;
+        font-size: 20px;
     }
 
     #about .btn-container {
@@ -269,7 +271,7 @@
             rgba(var(--secondary-color), 0.8),
             rgba(var(--secondary-color), 0.8)
         ),
-        url(../img/carousel-1.jpg) center center no-repeat;
+        url(../img/middle.jpeg) center center no-repeat;
     background-size: cover;
 }
 
