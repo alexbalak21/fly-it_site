@@ -1,4 +1,11 @@
  <!------------------------------------------------------------ TEAM START------------------------------------------------------------>
+<?php 
+
+require_once("team-card.php")
+
+
+?>
+
 
  <section id="team" class="container-xxl py-5">
             <div class="container">
@@ -27,73 +34,11 @@
                     </p>
                 </div>
                 <div class="row g-4">
-                    <div
-                        class="col-lg-3 col-md-6 wow fadeInUp"
-                        data-wow-delay="0.1s"
-                    >
-                        <div class="team-item position-relative">
-                            <img
-                                class="img-fluid rounded-circle border border-primary"
-                                src="img/tarik.jpg"
-                                alt="Tarik GILANI"
-                            />
-                            <div class="team-text bg-light text-center p-4">
-                                <h5>Tarik GILANI</h5>
-                                <p>CEO</p>
-                                <div class="team-social text-center">
-                                    <a
-                                        class="btn btn-square"
-                                        href="https://www.linkedin.com/in/tarik-gilani-96299631/"
-                                        ><i class="fab fa-linkedin-in"></i
-                                    ></a>
-                                    <a
-                                        class="btn btn-square"
-                                        href="mailto:tarik.gilani@fly-it.tech"
-                                        ><i class="fa fa-envelope"></i
-                                    ></a>
-                                    <a
-                                        class="btn btn-square"
-                                        href="tel:+33685224002"
-                                        ><i class="fa fa-phone"></i
-                                    ></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div
-                        class="col-lg-3 col-md-6 wow fadeInUp"
-                        data-wow-delay="0.1s"
-                    >
-                        <div class="team-item position-relative">
-                            <img
-                                class="img-fluid rounded-circle border border-primary"
-                                src="img/monia.jpg"
-                                alt="Monia"
-                            />
-                            <div class="team-text bg-light text-center p-4">
-                                <h5>Monia BOURAS</h5>
-                                <p>Business manager</p>
-                                <div class="team-social text-center">
-                                    <a
-                                        class="btn btn-square"
-                                        href="https://www.linkedin.com/in/monia-bouras-635bb3b3/"
-                                        ><i class="fab fa-linkedin-in"></i
-                                    ></a>
-                                    <a
-                                        class="btn btn-square"
-                                        href="mailto:monia.bouras@fly-it.tech"
-                                        ><i class="fa fa-envelope"></i
-                                    ></a>
-                                    <a
-                                        class="btn btn-square"
-                                        href="tel:+33625101553"
-                                        ><i class="fa fa-phone"></i
-                                    ></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php
+                    echo team_card($img_src = "img/tarik.jpg", $name = "Tarik GILANI", $position ="CEO", $lined_in = "https://www.linkedin.com/in/tarik-gilani-96299631/", $mail = "tarik.gilani@fly-it.tech", $phone = "+33685224002");    
+                  
+                     echo team_card($img_src = "img/monia.jpg", $name = "Monia BOURAS", $position ="Business manager", $lined_in = "https://www.linkedin.com/in/monia-bouras-635bb3b3/", $mail = "monia.bouras@fly-it.tech", $phone = "+33625101553")
+                    ?>
 
                     <div
                         class="col-lg-3 col-md-6 wow fadeInUp"

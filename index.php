@@ -406,7 +406,6 @@
         //TEAM SECTION
         require_once("./components/team.php");
         
-        //CONTACT SECTION
         include("./components/contact-banner.php")
         ?>
 
