@@ -27,7 +27,7 @@
       
 
         <!------------------------------------------------------------ ABOUT START------------------------------------------------------------>
-        <section class="container-xxl py-5 about"  id="about">
+        <section class="container-xxl py-3 about"  id="about">
             <div class="container">
                 <div class="row g-5">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -36,7 +36,7 @@
                             style="min-height: 400px"
                         >
                             <img
-                                class="position-absolute w-100 h-100 pt-5 pe-5"
+                                class="position-absolute w-100 h-100 pt-5"
                                 src="img/values.jpeg"
                                 alt=""
                                 style="object-fit: cover"

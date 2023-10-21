@@ -167,6 +167,10 @@
     .navbar .navbar-nav .nav-link {
         padding: 10px 0;
     }
+
+    #about .btn-container {
+        text-align: center;
+    }
 }
 
 @media (min-width: 992px) {
@@ -185,6 +189,9 @@
         visibility: visible;
         transition: 0.5s;
         opacity: 1;
+    }
+    #about img {
+        width: 100% !important;
     }
 }
 
@@ -227,6 +234,10 @@
             display: block;
             margin-top: 20px !important;
         }
+    }
+
+    .carousel-item {
+        height: 700px !important;
     }
 
     #header-carousel .carousel-item img {
