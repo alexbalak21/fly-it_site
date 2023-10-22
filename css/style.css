@@ -5,6 +5,7 @@
 :root {
     --primary: #8bfbde;
     --secondary: #090b40;
+    --mix-prim-sec: #345b75;
     --light: #f8f8f9;
     --dark: #001d23;
     --gery: #787878;
@@ -490,6 +491,43 @@
     }
 }
 /* PARTNERS END */
+
+/* CONTACT PAGE  */
+
+.contact-info {
+    --icon-size: 16px;
+    --icon-cirlce-size: calc(16px * 3);
+    & .line {
+        display: flex;
+        align-items: center;
+    }
+    & a {
+        color: var(--mix-prim-sec) !important;
+        display: inline-block;
+        width: 240px !important;
+    }
+    & a:hover {
+        color: var(--secondary) !important;
+    }
+
+    & .fa-copy {
+    }
+
+    & .icon-circle {
+        height: var(--icon-cirlce-size);
+        width: var(--icon-cirlce-size);
+        background-color: var(--secondary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-right: 24px;
+    }
+    & .fa-solid {
+        font-size: var(--icon-size);
+        color: var(--light);
+    }
+}
 
 /*** Footer ***/
 
