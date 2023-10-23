@@ -118,6 +118,21 @@ nav_links.forEach((link) => {
     })
 })
 
+//CHECKING IF CONTACT PAGE IS ALREDY SNET
+const contact_page_form_inputs = document.querySelectorAll(
+    "#contact-page-form input"
+)
+if (typeof contact_page_form !== "undefined") {
+    document.getElementById("nom").value = form.name
+    document.getElementById("email").value = form.mail
+    document.getElementById("Votre-besoin").value = form.need
+    document.getElementById("message").value = form.message
+    contact_page_form_inputs.forEach((input) =>
+        input.setAttribute("disabled", "")
+    )
+    document.getElementById("send-message-btn").setAttribute("disabled", "")
+}
+
 //ACTIVATING THE FIRST LINK
 let page_scroll_position = window.scrollY
 const first_id = sections[0].getAttribute("id")

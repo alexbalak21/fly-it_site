@@ -21,7 +21,7 @@
 
         <!-- Page Header Start -->
         <div
-            class="container-fluid page-header mb-5 wow fadeIn"
+            class="container-fluid page-header wow fadeIn"
             data-wow-delay="0.1s"
         >
             <div class="container text-center">
@@ -52,7 +52,7 @@
                                 Nous vous répondrons dans les plus bref délais.
                             </p>
                         </div>
-                        <form class="needs-validation" action="contact.php" method="POST" name="contact-page-form">
+                        <form id="contact-page-form" action="contact.php" method="POST" name="contact-page-form">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
@@ -64,6 +64,7 @@
                                             id="nom"
                                             placeholder="Votre nom"
                                             required
+                                           
                                         />
                                         <label for="name">Votre nom</label>
                                     </div>
@@ -78,6 +79,7 @@
                                             placeholder="Votre Email"
                                             min="5"
                                             required
+                                    
                                         />
                                         <label for="email">Votre Email</label>
                                     </div>
@@ -92,6 +94,7 @@
                                             id="Votre-besoin"
                                             placeholder="Votre-besoin"
                                             required
+                                        
                                         />
                                         <label for="Votre-besoin"
                                             >Votre besoin</label
@@ -107,6 +110,7 @@
                                             id="message"
                                             style="height: 100px"
                                             required
+                                           
                                         ></textarea>
                                         <label for="message"
                                             >Votre message</label
@@ -116,6 +120,7 @@
                                 <div class="col-12 btn-container">
                                     <button type="submit"
                                         class="btn btn-secondary py-2 px-3 me-3"
+                                        id="send-message-btn"
                                     >
                                         Envoyez votre Message
                                         <div

@@ -1,5 +1,5 @@
-<div class="alert alert-success alert-dismissible fade show text-center" role="alert">
-    <p>Votre message à bien été envoyé, nous vous répondrons dans les plus bref délais. </p>
+<div class="alert alert-danger alert-dismissible fade show text-center" role="alert">
+    <p>Une erreur s'est produite pendant l'envoi de votre message. Vous pouvez essayer de nous contacter par mail ou par téléphone.</p>
     <div>
    Revenir vers <strong> <a class="text-secondary" href="/">Accueil</a></strong>
     </div>
