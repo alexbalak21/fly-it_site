@@ -263,6 +263,9 @@
     .about .btn-container {
         text-align: center;
     }
+    .contact-page .fa-copy {
+        margin-top: 16px;
+    }
 }
 
 .page-header {
@@ -508,9 +511,6 @@
     }
     & a:hover {
         color: var(--secondary) !important;
-    }
-
-    & .fa-copy {
     }
 
     & .icon-circle {
