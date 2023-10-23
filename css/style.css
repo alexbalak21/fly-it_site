@@ -263,7 +263,7 @@
     .about .btn-container {
         text-align: center;
     }
-    .contact-page .fa-copy {
+    .contact-page .contact-info .fa-copy {
         margin-top: 16px;
     }
 }

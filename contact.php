@@ -18,6 +18,7 @@
         require_once("./components/topbar.php");
         ?>
 
+
         <!-- Page Header Start -->
         <div
             class="container-fluid page-header mb-5 wow fadeIn"
@@ -32,7 +33,7 @@
         <!-- Page Header End -->
 
         <!-- Contact Start -->
-        <section class="container-xxl py-5 contact-page" id="contact-page">
+        <section class="container-xxl py-5 contact-page" id="contact">
             <div class="container">
                 <div class="row g-5">
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
@@ -109,90 +110,42 @@
                                             <i class="fa fa-arrow-right"></i>
                                         </div>
                                     </button>
+                                    <span class="mx-4">
+                                        <a
+                                            class="text-secondary mx-3"
+                                            href="mailto:recrutement@fly-it.tech"
+                                            >recrutement@fly-it.tech</a
+                                        >
+                                        <i
+                                            style="
+                                                font-size: 24px;
+                                                cursor: pointer;
+                                            "
+                                            class="text-secondary fa-regular fa-copy"
+                                            onclick="navigator.clipboard.writeText('recrutement@fly-it.tech');"
+                                        ></i>
+                                    </span>
                                 </div>
                             </div>
                         </form>
                     </div>
                     <div
-                        class="col-lg-6 wow fadeIn contact-info"
+                        class="col-lg-6 wow fadeIn"
                         data-wow-delay="0.5s"
                         style="min-height: 450px"
                     >
-                        <h2 class="mb-2">Nos coordonnées</h2>
-                        <div class="py-4 px-4">
-                            <div class="line mb-5">
-                                <div class="icon-circle">
-                                    <i class="fa-solid fa-location-dot"></i>
-                                </div>
-                                <div>
-                                    <h4>Adresse</h4>
-                                    <a
-                                        class=""
-                                        href="https://www.google.com/maps/place/55+Av.+Ren%C3%A9+Cassin,+69009+Lyon/data=!4m2!3m1!1s0x47f4eb7496a55165:0x14ce65420b6f18e1?sa=X&ved=2ahUKEwj_k9_axvqBAxWYVqQEHRVRDOcQ8gF6BAgPEAA&ved=2ahUKEwj_k9_axvqBAxWYVqQEHRVRDOcQ8gF6BAgVEAI"
-                                        >55 ter Av. René Cassin<br />69009
-                                        Lyon</a
-                                    >
-                                    <i
-                                        style="font-size: 24px; cursor: pointer"
-                                        class="text-secondary fa-regular fa-copy"
-                                        onclick="navigator.clipboard.writeText('55 ter Av. René Cassin, 69009 Lyon');"
-                                    ></i>
-                                </div>
-                            </div>
-                            <div class="line mb-5">
-                                <div class="icon-circle">
-                                    <i class="fa-solid fa-phone"></i>
-                                </div>
-                                <div>
-                                    <h4>Telephone</h4>
-                                    <a href="tel:+33685224002" class=""
-                                        >06 85 22 40 02</a
-                                    >
-                                    <i
-                                        style="font-size: 24px; cursor: pointer"
-                                        class="text-secondary fa-regular fa-copy"
-                                        onclick="navigator.clipboard.writeText('+33685224002');"
-                                    ></i>
-                                </div>
-                            </div>
-                            <div class="line mb-5">
-                                <div class="icon-circle">
-                                    <i class="fa fa-envelope text-light"></i>
-                                </div>
-                                <div>
-                                    <h4>Email</h4>
-                                    <a
-                                        href="mailto:recrutement@fly-it.tech"
-                                        class=""
-                                        >recrutement@fly-it.tech</a
-                                    >
-                                    <i
-                                        style="font-size: 24px; cursor: pointer"
-                                        class="text-secondary fa-regular fa-copy"
-                                        onclick="navigator.clipboard.writeText('recrutement@fly-it.tech');"
-                                    ></i>
-                                </div>
-                            </div>
-                            <div class="line mb-5">
-                                <div class="icon-circle">
-                                    <i
-                                        class="fab fa-linkedin-in text-light"
-                                    ></i>
-                                </div>
-                                <div>
-                                    <h4>Linked In</h4>
-                                    <a
-                                        href="https://fr.linkedin.com/company/fly-it-tech/"
-                                        class=""
-                                        >fly-it-tech</a
-                                    >
-                                    <i
-                                        style="font-size: 24px; cursor: pointer"
-                                        class="text-secondary fa-regular fa-copy"
-                                        onclick="navigator.clipboard.writeText('fr.linkedin.com/company/fly-it-tech/');"
-                                    ></i>
-                                </div>
-                            </div>
+                        <div
+                            class="position-relative rounded overflow-hidden h-100"
+                        >
+                            <iframe
+                                class="position-relative w-100 h-100"
+                                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=55+Av.+René+Cassin,+69009+Lyon"
+                                frameborder="0"
+                                style="min-height: 450px; border: 0"
+                                allowfullscreen=""
+                                aria-hidden="false"
+                                tabindex="0"
+                            ></iframe>
                         </div>
                     </div>
                 </div>
@@ -201,7 +154,7 @@
         <!-- Contact End -->
 
         <!------------------------------------------------------------ FOOTER------------------------------------------------------------>
-        <?php
+       <?php
        require_once("./components/footer.php");
 
        //BACK TO THE TOP
