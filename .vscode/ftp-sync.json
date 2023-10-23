@@ -1,0 +1,8 @@
+{
+    "remotePath": "./www",
+    "host": "ftp-alex-blk.alwaysdata.net",
+    "username": "alex-blk",
+    "password": "BD3agu#7UAy!M@BX4fajb4?",
+    "protocol": "ftp",
+    "ignore": "\\Identité visuelle"
+}

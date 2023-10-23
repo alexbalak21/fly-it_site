@@ -5,7 +5,6 @@
 :root {
     --primary: #8bfbde;
     --secondary: #090b40;
-    --mix-prim-sec: #345b75;
     --light: #f8f8f9;
     --dark: #001d23;
     --gery: #787878;
@@ -167,12 +166,6 @@
 
     .navbar .navbar-nav .nav-link {
         padding: 10px 0;
-        text-align: center;
-        font-size: 20px;
-    }
-
-    #about .btn-container {
-        text-align: center;
     }
 }
 
@@ -193,16 +186,9 @@
         transition: 0.5s;
         opacity: 1;
     }
-    #about img {
-        width: 100% !important;
-    }
 }
 
 /*** Header ***/
-.carousel-item {
-    height: 900px !important;
-}
-
 .carousel-caption {
     top: 0;
     left: 0;
@@ -243,10 +229,6 @@
         }
     }
 
-    .carousel-item {
-        height: 700px !important;
-    }
-
     #header-carousel .carousel-item img {
         position: absolute;
         width: 100%;
@@ -263,9 +245,6 @@
     .about .btn-container {
         text-align: center;
     }
-    .contact-page .contact-info .fa-copy {
-        margin-top: 16px;
-    }
 }
 
 .page-header {
@@ -275,7 +254,7 @@
             rgba(var(--secondary-color), 0.8),
             rgba(var(--secondary-color), 0.8)
         ),
-        url(../img/middle.jpeg) center center no-repeat;
+        url(../img/carousel-1.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -353,6 +332,11 @@
 }
 
 /*** Contact ***/
+.contact-banner .overlay {
+    width: 100vw !important;
+    height: 100%;
+    background: rgba(var(--secondary-color), 0.8);
+}
 
 .btn-secondary:hover {
     color: var(--secondary);
@@ -494,40 +478,6 @@
     }
 }
 /* PARTNERS END */
-
-/* CONTACT PAGE  */
-
-.contact-info {
-    --icon-size: 16px;
-    --icon-cirlce-size: calc(16px * 3);
-    & .line {
-        display: flex;
-        align-items: center;
-    }
-    & a {
-        color: var(--mix-prim-sec) !important;
-        display: inline-block;
-        width: 220px !important;
-    }
-    & a:hover {
-        color: var(--secondary) !important;
-    }
-
-    & .icon-circle {
-        height: var(--icon-cirlce-size);
-        min-width: var(--icon-cirlce-size) !important;
-        background-color: var(--secondary);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        margin-right: 24px;
-    }
-    & .fa-solid {
-        font-size: var(--icon-size);
-        color: var(--light);
-    }
-}
 
 /*** Footer ***/
 

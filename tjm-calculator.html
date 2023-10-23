@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur de TJM et Salaire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            padding: 20px;
+            width: 400px;
+        }
+        input, button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculateur de TJM et Salaire</h1>
+        <label for="marge">Marge (%) :</label>
+        <input type="range" id="marge" min="0" max="50" step="1" value="25">
+        <span id="margeValue">25%</span>
+        <hr>
+        <label for="salaire">Salaire annuel brut (€) :</label>
+        <input type="number" id="salaire" placeholder="Ex: 43000" onchange="afficherPositionEtCoefficient()">
+        <p id="positionEtCoefficient"></p>
+        <button onclick="calculerTJM()">Calculer TJM cible</button>
+        <p id="resultatTJM"></p>
+        <hr>
+        <label for="tjm">TJM (€) :</label>
+        <input type="number" id="tjm" placeholder="Ex: 400">
+        <button onclick="calculerSalaire()">Calculer salaire annuel brut</button>
+        <p id="resultatSalaire"></p>
+    </div>
+    <script>
+        document.getElementById('marge').addEventListener('input', function () {
+    document.getElementById('margeValue').innerText = this.value + '%';
+});
+
+function afficherPositionEtCoefficient() {
+    const salaire = parseFloat(document.getElementById('salaire').value);
+    const grilleSyntec = [
+        { position: '1.1', coefficient: 95, salaireMin: 2033 },
+        { position: '1.2', coefficient: 100, salaireMin: 2140 },
+        { position: '2.1', coefficient: 105, salaireMin: 2241 },
+        { position: '2.1', coefficient: 115, salaireMin: 2454 },
+        { position: '2.2', coefficient: 130, salaireMin: 2774 },
+        { position: '2.3', coefficient: 150, salaireMin: 3201 },
+        { position: '3.1', coefficient: 170, salaireMin: 3577 },
+        { position: '3.2', coefficient: 210, salaireMin: 4419 },
+        { position: '3.3', coefficient: 270, salaireMin: 5681 }
+    ];
+
+    let resultat = "Position et coefficient non trouvés";
+    for (let i = 0; i < grilleSyntec.length; i++) {
+        if (salaire >= grilleSyntec[i].salaireMin && (i === grilleSyntec.length - 1 || salaire < grilleSyntec[i + 1].salaireMin)) {
+            resultat = `Position : ${grilleSyntec[i].position}, Coefficient : ${grilleSyntec[i].coefficient}`;
+            break;
+        }
+    }
+    document.getElementById('positionEtCoefficient').innerText = resultat;
+}
+
+function calculerTJM() {
+    const salaire = parseFloat(document.getElementById('salaire').value);
+    const packageAnnuel = 5000;
+    const marge = parseFloat(document.getElementById('marge').value) / 100;
+    const joursAn = 220;
+
+    const coutTotal = salaire + packageAnnuel;
+    const tjm = (coutTotal / joursAn) / (1 - marge);
+
+    document.getElementById('resultatTJM').innerHTML = `TJM cible : ${tjm.toFixed(2)}€`;
+}
+
+function calculerSalaire() {
+    const tjm = parseFloat(document.getElementById('tjm').value);
+    const marge = parseFloat(document.getElementById('marge').value) / 100;
+    const joursAn = 220;
+    const packageAnnuel = 5000;
+
+    const coutTotal = tjm * joursAn * (1 - marge);
+    const salaire = coutTotal - packageAnnuel;
+
+    document.getElementById('resultatSalaire').innerHTML = `Salaire annuel brut correspondant : ${salaire.toFixed(2)}€`;
+}
+
+    </script>
+</body>
+</html>
+
