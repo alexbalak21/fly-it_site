@@ -109,7 +109,6 @@
                                             <i class="fa fa-arrow-right"></i>
                                         </div>
                                     </button>
-                                   
                                 </div>
                             </div>
                         </form>
@@ -122,70 +121,77 @@
                         <h2 class="mb-2">Nos coordonnées</h2>
                         <div class="py-4 px-4">
                             <div class="line mb-5">
-                            <div class="icon-circle">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
-                            <div>
-                            <h4>Adresse</h4>
-                                <a class="" href="https://www.google.com/maps/place/55+Av.+Ren%C3%A9+Cassin,+69009+Lyon/data=!4m2!3m1!1s0x47f4eb7496a55165:0x14ce65420b6f18e1?sa=X&ved=2ahUKEwj_k9_axvqBAxWYVqQEHRVRDOcQ8gF6BAgPEAA&ved=2ahUKEwj_k9_axvqBAxWYVqQEHRVRDOcQ8gF6BAgVEAI">55 ter Av. René Cassin<br>69009 Lyon</a>
-                                <i
-                                            style="
-                                                font-size: 24px;
-                                                cursor: pointer;
-                                            "
-                                            class="text-secondary fa-regular fa-copy"
-                                            onclick="navigator.clipboard.writeText('55 ter Av. René Cassin, 69009 Lyon');"
-                                        ></i>
-                            </div>
-                            </div>
-                            <div class="line mb-5">
-                            <div class="icon-circle">
-                                <i class="fa-solid fa-phone"></i>
-                            </div>
-                            <div>
-                            <h4>Telephone</h4>
-                                <a href="tel:+33685224002" class="">06 85 22 40 02</a>
-                                <i
-                                            style="
-                                                font-size: 24px;
-                                                cursor: pointer;
-                                            "
-                                            class="text-secondary fa-regular fa-copy"
-                                            onclick="navigator.clipboard.writeText('+33685224002');"
-                                        ></i>
-                            </div>
+                                <div class="icon-circle">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <h4>Adresse</h4>
+                                    <a
+                                        class=""
+                                        href="https://www.google.com/maps/place/55+Av.+Ren%C3%A9+Cassin,+69009+Lyon/data=!4m2!3m1!1s0x47f4eb7496a55165:0x14ce65420b6f18e1?sa=X&ved=2ahUKEwj_k9_axvqBAxWYVqQEHRVRDOcQ8gF6BAgPEAA&ved=2ahUKEwj_k9_axvqBAxWYVqQEHRVRDOcQ8gF6BAgVEAI"
+                                        >55 ter Av. René Cassin<br />69009
+                                        Lyon</a
+                                    >
+                                    <i
+                                        style="font-size: 24px; cursor: pointer"
+                                        class="text-secondary fa-regular fa-copy"
+                                        onclick="navigator.clipboard.writeText('55 ter Av. René Cassin, 69009 Lyon');"
+                                    ></i>
+                                </div>
                             </div>
                             <div class="line mb-5">
-                            <div class="icon-circle">
-                                <i class="fa fa-envelope text-light"></i>
-                            </div>
-                            <div>
-                            <h4>Email</h4>
-                                <a href="mailto:recrutement@fly-it.tech" class="">recrutement@fly-it.tech</a> <i
-                                            style="
-                                                font-size: 24px;
-                                                cursor: pointer;
-                                            "
-                                            class="text-secondary fa-regular fa-copy"
-                                            onclick="navigator.clipboard.writeText('recrutement@fly-it.tech');"
-                                        ></i>
-                            </div>
+                                <div class="icon-circle">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4>Telephone</h4>
+                                    <a href="tel:+33685224002" class=""
+                                        >06 85 22 40 02</a
+                                    >
+                                    <i
+                                        style="font-size: 24px; cursor: pointer"
+                                        class="text-secondary fa-regular fa-copy"
+                                        onclick="navigator.clipboard.writeText('+33685224002');"
+                                    ></i>
+                                </div>
                             </div>
                             <div class="line mb-5">
-                            <div class="icon-circle">
-                                <i class="fab fa-linkedin-in text-light"></i>
+                                <div class="icon-circle">
+                                    <i class="fa fa-envelope text-light"></i>
+                                </div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a
+                                        href="mailto:recrutement@fly-it.tech"
+                                        class=""
+                                        >recrutement@fly-it.tech</a
+                                    >
+                                    <i
+                                        style="font-size: 24px; cursor: pointer"
+                                        class="text-secondary fa-regular fa-copy"
+                                        onclick="navigator.clipboard.writeText('recrutement@fly-it.tech');"
+                                    ></i>
+                                </div>
                             </div>
-                            <div>
-                            <h4>Linked In</h4>
-                                <a href="https://fr.linkedin.com/company/fly-it-tech/" class="">fly-it-tech</a> <i
-                                            style="
-                                                font-size: 24px;
-                                                cursor: pointer;
-                                            "
-                                            class="text-secondary fa-regular fa-copy"
-                                            onclick="navigator.clipboard.writeText('fr.linkedin.com/company/fly-it-tech/');"
-                                        ></i>
-                            </div>
+                            <div class="line mb-5">
+                                <div class="icon-circle">
+                                    <i
+                                        class="fab fa-linkedin-in text-light"
+                                    ></i>
+                                </div>
+                                <div>
+                                    <h4>Linked In</h4>
+                                    <a
+                                        href="https://fr.linkedin.com/company/fly-it-tech/"
+                                        class=""
+                                        >fly-it-tech</a
+                                    >
+                                    <i
+                                        style="font-size: 24px; cursor: pointer"
+                                        class="text-secondary fa-regular fa-copy"
+                                        onclick="navigator.clipboard.writeText('fr.linkedin.com/company/fly-it-tech/');"
+                                    ></i>
+                                </div>
                             </div>
                         </div>
                     </div>
