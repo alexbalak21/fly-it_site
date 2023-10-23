@@ -31,6 +31,9 @@
             </div>
         </div>
         <!-- Page Header End -->
+        <?php
+            require_once("./logic/contact_to_mail.php")
+        ?>
 
         <!-- Contact Start -->
         <section class="container-xxl py-5 contact-page" id="contact">
@@ -42,22 +45,25 @@
                         >
                             Contactez-nous
                         </div>
-
+                 
                         <div class="mb-4">
                             <p>
                                 <br /><br />
-                                Nous vous répondrons dans les plus bref délais
+                                Nous vous répondrons dans les plus bref délais.
                             </p>
                         </div>
-                        <form>
+                        <form class="needs-validation" action="contact.php" method="POST" name="contact-page-form">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
                                         <input
+                                            name="name"
+                                            min="4"
                                             type="text"
                                             class="form-control"
-                                            id="name"
+                                            id="nom"
                                             placeholder="Votre nom"
+                                            required
                                         />
                                         <label for="name">Votre nom</label>
                                     </div>
@@ -65,10 +71,13 @@
                                 <div class="col-md-6">
                                     <div class="form-floating">
                                         <input
+                                            name="mail"
                                             type="email"
                                             class="form-control"
                                             id="email"
                                             placeholder="Votre Email"
+                                            min="5"
+                                            required
                                         />
                                         <label for="email">Votre Email</label>
                                     </div>
@@ -76,10 +85,13 @@
                                 <div class="col-12">
                                     <div class="form-floating">
                                         <input
+                                            name="need"
+                                            min="4"
                                             type="text"
                                             class="form-control"
                                             id="Votre-besoin"
                                             placeholder="Votre-besoin"
+                                            required
                                         />
                                         <label for="Votre-besoin"
                                             >Votre besoin</label
@@ -89,10 +101,12 @@
                                 <div class="col-12">
                                     <div class="form-floating">
                                         <textarea
+                                            name="message"
                                             class="form-control"
                                             placeholder="Leave a message here"
                                             id="message"
                                             style="height: 100px"
+                                            required
                                         ></textarea>
                                         <label for="message"
                                             >Votre message</label
@@ -100,7 +114,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 btn-container">
-                                    <button
+                                    <button type="submit"
                                         class="btn btn-secondary py-2 px-3 me-3"
                                     >
                                         Envoyez votre Message
