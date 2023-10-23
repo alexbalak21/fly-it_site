@@ -32,7 +32,7 @@
         <!-- Page Header End -->
 
         <!-- Contact Start -->
-        <section class="container-xxl py-5 contact-page" id="contact">
+        <section class="container-xxl py-5 contact-page" id="contact-page">
             <div class="container">
                 <div class="row g-5">
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
@@ -157,7 +157,7 @@
                             </div>
                             <div class="line mb-5">
                             <div class="icon-circle">
-                                <i class="fa-solid fa-phone"></i>
+                                <i class="fa fa-envelope text-light"></i>
                             </div>
                             <div>
                             <h4>Email</h4>
@@ -168,6 +168,22 @@
                                             "
                                             class="text-secondary fa-regular fa-copy"
                                             onclick="navigator.clipboard.writeText('recrutement@fly-it.tech');"
+                                        ></i>
+                            </div>
+                            </div>
+                            <div class="line mb-5">
+                            <div class="icon-circle">
+                                <i class="fab fa-linkedin-in text-light"></i>
+                            </div>
+                            <div>
+                            <h4>Linked In</h4>
+                                <a href="https://fr.linkedin.com/company/fly-it-tech/" class="">fly-it-tech</a> <i
+                                            style="
+                                                font-size: 24px;
+                                                cursor: pointer;
+                                            "
+                                            class="text-secondary fa-regular fa-copy"
+                                            onclick="navigator.clipboard.writeText('fr.linkedin.com/company/fly-it-tech/');"
                                         ></i>
                             </div>
                             </div>

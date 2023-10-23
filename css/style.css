@@ -504,7 +504,7 @@
     & a {
         color: var(--mix-prim-sec) !important;
         display: inline-block;
-        width: 240px !important;
+        width: 220px !important;
     }
     & a:hover {
         color: var(--secondary) !important;
@@ -515,7 +515,7 @@
 
     & .icon-circle {
         height: var(--icon-cirlce-size);
-        width: var(--icon-cirlce-size);
+        min-width: var(--icon-cirlce-size) !important;
         background-color: var(--secondary);
         display: flex;
         align-items: center;
