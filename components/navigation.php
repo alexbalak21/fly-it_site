@@ -21,12 +21,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto p-4 p-lg-0">
-                        <a href="/#header-carousel" class="nav-item nav-link active"
+                        <a href="/#header-carousel" class="nav-item nav-link active" 
                             >Accueil</a
                         >
-                        <a href="/#about" class="nav-item nav-link">A propos</a>
+                        <a href="/#about" class="nav-item nav-link"  data-bs-toggle="collapse navbar-collapse">A propos</a>
 
-                        <a href="/#tech" class="nav-item nav-link">Techs</a>
+                        <a href="/#tech" class="nav-item nav-link" >Techs</a>
 
                         <a href="/#services" class="nav-item nav-link"
                             >Services</a

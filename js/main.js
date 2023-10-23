@@ -109,10 +109,21 @@ $(document).ready(function () {
 // NAVUGATION LINKS ACTIVATION
 const nav_links = document.querySelectorAll(".navbar-collapse .nav-link")
 const sections = document.querySelectorAll("section")
+nav_collapse = document.getElementById("navbarCollapse")
+
+//CLOSING NAVBAR WHEN CICK ON NAVLINK
+nav_links.forEach((link) => {
+    link.addEventListener("click", () => {
+        nav_collapse.classList.remove("show")
+    })
+})
+
+//ACTIVATING THE FIRST LINK
 let page_scroll_position = window.scrollY
 const first_id = sections[0].getAttribute("id")
 activate_nav_link("#" + first_id)
 
+//ACTIVATING LINKS ON SCROLL
 window.onscroll = () => {
     page_scroll_position = window.scrollY
     sections.forEach((section) => {
@@ -128,7 +139,6 @@ window.onscroll = () => {
 }
 
 function activate_nav_link(name = "#home") {
-    console.log(name)
     nav_links.forEach((link) => {
         link.classList.remove("active")
         if (name === link.href.split("/").pop()) link.classList.add("active")
