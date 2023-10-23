@@ -33,7 +33,7 @@
 
             <a href="/#team" class="nav-item nav-link">Équipe</a>
 
-            <a href="#partners" class="nav-item nav-link">Partenaires </a>
+            <a href="/#partners" class="nav-item nav-link">Partenaires </a>
 
             <a href="contact.php" class="nav-item nav-link">Contact</a>
 
