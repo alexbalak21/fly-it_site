@@ -122,14 +122,18 @@ nav_links.forEach((link) => {
 const contact_page_form_inputs = document.querySelectorAll(
     "#contact-page-form input"
 )
+//IF variable form_ existst that means the form has been sent successfuly
 if (typeof contact_page_form !== "undefined") {
-    document.getElementById("nom").value = form.name
-    document.getElementById("email").value = form.mail
-    document.getElementById("Votre-besoin").value = form.need
-    document.getElementById("message").value = form.message
+    document.getElementById("nom").value = contact_page_form.name
+    document.getElementById("email").value = contact_page_form.mail
+    document.getElementById("Votre-besoin").value = contact_page_form.need
+    document.getElementById("message").value = contact_page_form.message
     contact_page_form_inputs.forEach((input) =>
         input.setAttribute("disabled", "")
     )
+    document
+        .querySelector("#contact-page-form textarea")
+        .setAttribute("disabled", "")
     document.getElementById("send-message-btn").setAttribute("disabled", "")
 }
 

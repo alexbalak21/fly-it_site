@@ -1,5 +1,5 @@
 <div class="alert alert-success alert-dismissible fade show text-center" role="alert">
-    <p>Votre message à bien été envoyé, nous vous répondrons dans les plus bref délais. </p>
+    <p>Votre message a bien été envoyé, nous vous répondrons dans les plus bref délais. </p>
     <div>
    Revenir vers <strong> <a class="text-secondary" href="/">Accueil</a></strong>
     </div>

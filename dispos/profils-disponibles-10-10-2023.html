@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        body {
+            background-color: #f7f9fc;
+        }
+
+        .header {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px 0;
+            border-bottom: 5px solid #007bff;
+        }
+
+        .developer {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px 0;
+            border: 1px solid #e4e4e4;
+            padding: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            align-items: center; /* Aligne verticalement le contenu à l'intérieur du bloc */
+        }
+
+        .developer:nth-child(even) {
+            background-color: #090b40;
+            color: #ffffff;
+        }
+
+        .developer:nth-child(odd) {
+            background-color: #bdfbde;
+        }
+
+        .developer img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+            border: 3px solid #007bff;
+        }
+
+        .developer:nth-child(even) img {
+            border-color: #bdfbde;
+        }
+
+        .developer .description {
+            flex: 1;  /* Prend tout l'espace restant */
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .developer .description h5 {
+            color: #007bff;
+        }
+
+        .developer:nth-child(even) .description h5 {
+            color: #bdfbde;
+        }
+
+        .developer .description p {
+            margin-bottom: 5px;
+        }
+
+        .developer .description p i {
+            margin-right: 5px;
+            color: #007bff;
+        }
+
+        .developer:nth-child(even) .description p i {
+            color: #bdfbde;
+        }
+
+        @media screen and (max-width: 600px) {
+            .developer {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .developer img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body class="container">
+    <!-- Logo Section -->
+    <div class="d-flex align-items-center justify-content-start mb-4">
+        <img src="https://www.fly-it.tech/dispos/logo.png" alt="Fly-IT Logo" style="width: 150px; height: auto;">
+    </div>
+
+    <div class="header mt-5">
+        <h4 class="text-center">Nos développeurs lyonnais (Démarrage ASAP) - Tous recrutés sur profil</h4>
+    </div>
+
+    <!-- Développeur 1 -->
+    <div class="developer d-flex flex-wrap mb-4">
+        <img src="https://www.fly-it.tech/dispos/imgDevs/badreddine.jpg" alt="Photo de Badreddine">
+        <div class="description flex-fill ml-3">
+			<a href="https://fly-it.tech/dispos/cvtheque/badreddine-cv.pdf" target="_blank" class="float-right mb-2">
+				<i class="fas fa-file-alt"></i> CV de Badreddine
+			</a>
+            <h5>Badreddine</h5>
+            <p><i class="fas fa-code"></i><strong>Technologie :</strong> PHP Symfony 5 et 6</p>
+            <p><i class="fas fa-calendar-alt"></i><strong>Expérience :</strong> 6 ans</p>
+			<p><i class="fas fa-city"></i><strong>Localisation :</strong> Lyon</p>
+            <p>Description : Avec une solide expérience en développement PHP Symfony, Baddredine a contribué à des projets d'envergure pour des institutions telles que l'ADEME, ALPTIS ASSURANCES et la SNCF. Maîtrisant un large éventail de technologies allant de Vue.js à MongoDB, il s'est illustré par la création d'interfaces modernes, la gestion de bases de données et la mise en œuvre de tests rigoureux. Sa formation académique, couronnée d'un Master à Paris, complète son profil riche et diversifié.</p>
+        </div>
+    </div>
+
+    <!-- Développeur 2 -->
+    <div class="developer d-flex flex-wrap mb-4">
+        <img src="https://www.fly-it.tech/dispos/imgDevs/sylvain.jpg" alt="Photo de Sylvain">
+        <div class="description flex-fill ml-3">
+			<a href="https://fly-it.tech/dispos/cvtheque/sylvain-cv.pdf" target="_blank" class="float-right mb-2">
+				<i class="fas fa-file-alt"></i> CV de Sylvain
+			</a>
+            <h5>Sylvain</h5>
+            <p><i class="fas fa-code"></i><strong>Technologie :</strong> Java / Angular</p>
+            <p><i class="fas fa-calendar-alt"></i><strong>Expérience :</strong> 3 ans</p>
+			<p><i class="fas fa-city"></i><strong>Localisation :</strong> Lyon</p>
+            <p>Description : Sylvain, un développeur Fullstack Java/Angular passionné basé à Lyon, affiche une solide expérience avec des entreprises comme EDF et Sopra-Steria. Au-delà de ses compétences techniques en Java, Angular, Spring et bien d'autres, Sylvain est un amateur de dessin, de jeux de plateau, et se perd volontiers dans la littérature française et anglo-saxonne. Son intérêt pour l'histoire, la mythologie, et son parcours académique solide, dont un Mastère Expert Informatique, le rendent aussi cultivé qu'expert dans son domaine.</p>
+        </div>
+    </div>
+
+    <!-- Développeur 3 -->
+    <div class="developer d-flex flex-wrap mb-4">
+        <img src="https://www.fly-it.tech/dispos/imgDevs/osama.jpg" alt="Photo d'Osama">
+        <div class="description flex-fill ml-3">
+			<a href="https://fly-it.tech/dispos/cvtheque/osama-cv.pdf" target="_blank" class="float-right mb-2">
+				<i class="fas fa-file-alt"></i> CV d'Osama
+			</a>
+            <h5>Osama</h5>
+            <p><i class="fas fa-code"></i><strong>Technologie :</strong> Data Scientist/Intelligence et Python</p>
+            <p><i class="fas fa-calendar-alt"></i><strong>Expérience :</strong> 3 ans</p>
+			<p><i class="fas fa-city"></i><strong>Localisation :</strong> Lyon</p>
+            <p>Description : Osama est un Data Scientist chevronné basé à Lyon, ayant une expertise approfondie en Python, Deep Learning, Computer Vision et NLP. Il a joué un rôle clé dans la création d'une plateforme d'intelligence artificielle innovante pour Fly'IT, et a contribué à des projets de simulation de conduite autonome chez DAVI The Humanizers. Avec une expérience dans l'application des techniques de Data Science à l'imagerie médicale, Osama a également partagé ses connaissances en tant qu'enseignant en programmation et Machine Learning à l'Université de Djelfa. En dehors du travail, il s'adonne au football, aux jeux de société et au ski. Ses études à la Sorbonne et à l'INSA témoignent de son engagement envers l'excellence académique.</p>
+        </div>
+    </div>
+
+    <!-- Développeur 4 -->
+    <div class="developer d-flex flex-wrap mb-4">
+        <img src="https://www.fly-it.tech/dispos/imgDevs/mohamedHedi.jpg" alt="Photo de Mohamed Hedi">
+        <div class="description flex-fill ml-3">
+			<a href="https://fly-it.tech/dispos/cvtheque/mohamedhedi-cv.pdf" target="_blank" class="float-right mb-2">
+				<i class="fas fa-file-alt"></i> CV de Mohamed Hedi
+			</a>
+            <h5>Mohamed Hedi</h5>
+            <p><i class="fas fa-code"></i><strong>Technologie :</strong> .Net / Angular & React</p>
+            <p><i class="fas fa-calendar-alt"></i><strong>Expérience :</strong> 5 ans</p>
+			<p><i class="fas fa-city"></i><strong>Localisation :</strong> Lyon</p>
+            <p>Description : Mohamed Hedi est un développeur Full Stack .NET/Angular & React expérimenté, basé à Lyon, avec une expertise pointue en développement d'applications web et mobiles pour des domaines variés, de la gestion de stock à la vente de produits chirurgicaux. Fort de ses compétences en Angular, React, .NET Core, et SQL Server, il s'est distingué par sa capacité à transformer des besoins complexes en solutions digitales fluides et efficaces. En plus de sa maîtrise technique, Mohamed Hedi est polyglotte, parlant couramment l'anglais et l'italien. Ses hobbies, tels que l'astronomie et le yoga, témoignent de sa curiosité insatiable et de son équilibre entre technologie et bien-être. Ses études d'ingénierie en génie logiciel en Tunisie et ses certifications diverses confirment son dévouement à l'excellence professionnelle.</p>
+        </div>
+    </div>
+
+    <!-- Développeur 5 -->
+    <div class="developer d-flex flex-wrap mb-4">
+        <img src="https://www.fly-it.tech/dispos/imgDevs/alex.jpg" alt="Photo d'Alex">
+        <div class="description flex-fill ml-3">
+			<a href="https://fly-it.tech/dispos/cvtheque/alex-cv.pdf" target="_blank" class="float-right mb-2">
+				<i class="fas fa-file-alt"></i> CV d'Alexandre
+			</a>
+            <h5>Alexandre</h5>
+            <p><i class="fas fa-code"></i><strong>Technologie :</strong> Support n2/n1 et Python</p>
+            <p><i class="fas fa-calendar-alt"></i><strong>Expérience :</strong> 2 ans</p>
+			<p><i class="fas fa-city"></i><strong>Localisation :</strong> Lyon</p>
+            <p>Description : Alexandre, basé à Lyon, est un analyste fonctionnel doué avec une expertise en résolution d'incidents pour des applications critiques comme celles liées aux centrales nucléaires. Sa capacité à élaborer des scripts d'optimisation et à gérer les relations client se distingue par sa méthodologie agile et sa maîtrise des outils comme Python, Jira et Shell. Avant cela, il a fait preuve d'une grande polyvalence, du développement web à la technologie avionique de l'Armée de Terre, soulignant ses compétences en électronique et en systèmes d'aéronefs. En dehors du travail, Alexandre est un passionné de musculation, de VTT, de photographie et de musique, reflétant un équilibre entre le monde technique et les loisirs. Ses qualifications académiques, notamment en électrotechnique, ajoutent une dimension supplémentaire à son profil déjà impressionnant.</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
