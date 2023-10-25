@@ -1,0 +1,8 @@
+<?php
+//WRITE FUNCTION THAT FETCH PROFILES ON DB AND FOREACH PROFILE GENERATES A DISPLAY
+
+function get_profiles(){
+    
+}
+
+?>

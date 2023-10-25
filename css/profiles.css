@@ -1,0 +1,114 @@
+:root {
+    --primary: #8bfbde;
+    --secondary: #090b40;
+    --mix-prim-sec: #345b75;
+    --light-blue: #007bff;
+    --light-green: #bdfbde;
+    --dark-blue: MediumBlue;
+    --light: #f8f8f9;
+    --dark: #001d23;
+    --gery: #787878;
+    --secondary-color: 9, 11, 64;
+}
+
+.developer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    border: 1px solid #e4e4e4;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    align-items: center; /* Aligne verticalement le contenu à l'intérieur du bloc */
+    & a:hover {
+        text-decoration: underline;
+    }
+}
+
+.developer:nth-child(even) {
+    background-color: var(--secondary);
+    color: #ffffff;
+    color: red;
+}
+
+.developer:nth-child(odd) {
+    background-color: var(--light-green);
+}
+
+.developer img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 3px solid var(--light-blue);
+}
+
+.developer:nth-child(even) img {
+    border-color: var(--light-green);
+}
+
+.developer .description {
+    flex: 1; /* Prend tout l'espace restant */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.developer .description h5 {
+    color: var(--light-blue);
+}
+
+.developer:nth-child(even) .description h5 {
+    color: var(--light-green);
+}
+
+.developer {
+    & a {
+        color: var(--light-blue);
+    }
+    & a:hover {
+        color: var(--dark-blue);
+    }
+}
+
+.developer:nth-child(even) {
+    & a {
+        color: var(--light-green) !important;
+    }
+    & a:hover {
+        color: #8bfbde !important;
+        text-decoration: underline;
+    }
+}
+
+.developer .description p {
+    margin-bottom: 5px;
+}
+
+.developer .description p i {
+    margin-right: 5px;
+    color: var(--light-blue);
+}
+
+.developer p {
+    color: var(--secondary);
+}
+
+.developer:nth-child(even) .description p {
+    color: var(--light);
+}
+
+.developer:nth-child(even) .description p i {
+    color: var(--light-green);
+}
+
+@media screen and (max-width: 600px) {
+    .developer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .developer img {
+        margin-bottom: 10px;
+    }
+}

@@ -6,6 +6,7 @@
     --primary: #8bfbde;
     --secondary: #090b40;
     --mix-prim-sec: #345b75;
+    --link-color: #007bff;
     --light: #f8f8f9;
     --dark: #001d23;
     --gery: #787878;
@@ -174,6 +175,9 @@
     #about .btn-container {
         text-align: center;
     }
+    .pill-container {
+        text-align: center;
+    }
 }
 
 @media (min-width: 992px) {
@@ -271,10 +275,7 @@
 .page-header {
     padding-top: 12rem;
     padding-bottom: 6rem;
-    background: linear-gradient(
-            rgba(var(--secondary-color), 0.8),
-            rgba(var(--secondary-color), 0.8)
-        ),
+    background: linear-gradient(rgba(var(--secondary-color), 0.8), rgba(var(--secondary-color), 0.8)),
         url(../img/middle.jpeg) center center no-repeat;
     background-size: cover;
 }
