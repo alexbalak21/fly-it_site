@@ -5,7 +5,7 @@
 $to = "alex-blk@alwaysdata.net";
 
 //PROD MAIL
-$to = "recrutement@fly-it.tech";
+// $to = "recrutement@fly-it.tech";
 
 
 //RECIVES DATA FORM THE CLIENT CHECKS THE DATA AND RESPONDS 202: MAIL SENT /400: DATA IS MISSING/ 403: BAD METHOD / 503: SERVER ERROR 
@@ -52,6 +52,7 @@ function send_mail($to, $name, $visitor_email, $need, $message): bool
     $email_body = $message;
     $headers = "From: $email_from \r\n";
     $headers .= "Reply-To: $visitor_email \r\n";
+    // mail returns true or false
     $sent = @mail($to, $email_subject, $email_body, $headers);
     return $sent;
 }
