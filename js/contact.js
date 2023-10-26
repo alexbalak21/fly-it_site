@@ -4,19 +4,9 @@ const form = document.querySelector("#contact-page-form")
 const contact_page_form_inputs = document.querySelectorAll("#contact-page-form input")
 const textarea = document.querySelector("#contact-page-form textarea")
 const contact_msg = document.querySelector("#conact-msg b")
+const send_btn = document.getElementById("send-message-btn")
 
-//IF variable form_ existst that means the form has been sent successfuly
-if (typeof contact_page_form !== "undefined") {
-    document.getElementById("nom").value = contact_page_form.name
-    document.getElementById("email").value = contact_page_form.mail
-    document.getElementById("Votre-besoin").value = contact_page_form.need
-    document.getElementById("message").value = contact_page_form.message
-    contact_page_form_inputs.forEach((input) => input.setAttribute("disabled", ""))
-    textarea.setAttribute("disabled", "")
-    document.getElementById("send-message-btn").setAttribute("disabled", "")
-}
 //VALIDATING INPUTS
-
 function input_validation(input, min_length = 4) {
     if (input.value.length < min_length) {
         input.classList.remove("is-valid")
@@ -25,10 +15,12 @@ function input_validation(input, min_length = 4) {
     } else {
         input.classList.remove("is-invalid")
         input.classList.add("is-valid")
+        contact_msg.innerHTML = ""
         return true
     }
 }
 
+// VALIDATING INPUT AFTER USER LEFT THE FIELD
 function add_validation_on_focus_out(input, min_length = 4) {
     input.addEventListener("focusout", () => input_validation(input, min_length))
 }
@@ -48,15 +40,29 @@ const submit_event = form.addEventListener("submit", (event) => {
     valid = input_validation(textarea, 10)
     if (valid) {
         const response_code = send_mail_to_server()
-        if (response_code == 202) console.log("mail has been sent")
-        contact_msg.classList.add("text-success")
-        contact_msg.innerHTML = `<i class="fa-solid fa-thumbs-up"></i> Votre message a bien éré envoyé !`
+        if (response_code == 202) {
+            contact_msg.classList.add("text-success")
+            contact_msg.innerHTML = `<i class="fa-solid fa-thumbs-up"></i> Votre message a bien éré envoyé !`
+            disable_all_fields()
+        } else {
+            contact_msg.classList.add("text-warning")
+            contact_msg.innerHTML = `<i class="fa-solid fa-triangle-exclamation"></i> L'envoi n'as pas pu aboutir. <br> Vous pouvez nous contaceter par mail.`
+        }
     } else {
         contact_msg.classList.add("text-danger")
-        contact_msg.innerHTML = `<i class="fa-solid fa-triangle-exclamation"></i> Votre fromulaire est mal rempli`
+        contact_msg.innerHTML = `<i class="fa-solid fa-circle-exclamation"></i> Votre fromulaire est mal rempli`
     }
     event.preventDefault()
 })
+
+function disable_all_fields() {
+    disable = (item) => {
+        item.setAttribute("disabled", "")
+    }
+    contact_page_form_inputs.forEach((input) => disable(input))
+    disable(textarea)
+    disable(send_btn)
+}
 
 async function send_mail_to_server() {
     let formData = new FormData(form)
@@ -65,6 +71,5 @@ async function send_mail_to_server() {
         body: formData,
     })
     let code = await response.status
-    console.log(code)
     return code
 }

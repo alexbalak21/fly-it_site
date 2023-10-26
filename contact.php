@@ -45,7 +45,7 @@ require_once './components/head.php';
                             <b>
 
                             </b>
-                        </h6>
+                            </h5>
 
                     </div>
                     <form id="contact-page-form" action="contact.php" method="POST" name="contact-page-form">
