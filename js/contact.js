@@ -37,7 +37,7 @@ function add_validation_on_focus_out(input, min_length = 4) {
 contact_page_form_inputs.forEach((input) => add_validation_on_focus_out(input))
 add_validation_on_focus_out(textarea, 10)
 
-form.addEventListener("submit", (event) => {
+const submit_event = form.addEventListener("submit", (event) => {
     contact_msg.innerHTML = ""
     contact_msg.classList.remove("text-success")
     contact_msg.classList.remove("text-danger")
@@ -47,7 +47,8 @@ form.addEventListener("submit", (event) => {
     })
     valid = input_validation(textarea, 10)
     if (valid) {
-        console.log("SEND MESSAGE")
+        const response_code = send_mail_to_server()
+        if (response_code == 202) console.log("mail has been sent")
         contact_msg.classList.add("text-success")
         contact_msg.innerHTML = `<i class="fa-solid fa-thumbs-up"></i> Votre message a bien éré envoyé !`
     } else {
@@ -56,3 +57,14 @@ form.addEventListener("submit", (event) => {
     }
     event.preventDefault()
 })
+
+async function send_mail_to_server() {
+    let formData = new FormData(form)
+    const response = await fetch("https://alex-blk.alwaysdata.net/logic/contact_to_mail.php", {
+        method: "POST",
+        body: formData,
+    })
+    let code = await response.status
+    console.log(code)
+    return code
+}

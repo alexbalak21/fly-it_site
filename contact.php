@@ -24,9 +24,6 @@ require_once './components/head.php';
         </div>
     </div>
     <!-- Page Header End -->
-    <?php
-    require_once './logic/contact_to_mail.php';
-    ?>
 
     <!-- Contact Start -->
     <section class="container-xxl py-5 contact-page" id="contact">
@@ -44,11 +41,11 @@ require_once './components/head.php';
                             Nous vous répondrons dans les plus bref délais.
                         </p>
 
-                        <p id="conact-msg" class="text-center my-1">
+                        <h6 id="conact-msg" class="text-center my-1">
                             <b>
 
                             </b>
-                        </p>
+                        </h6>
 
                     </div>
                     <form id="contact-page-form" action="contact.php" method="POST" name="contact-page-form">
