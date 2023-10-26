@@ -1,5 +1,5 @@
 //CONTACT PAGE SCRIPT
-let contact_to_mail_url = "https://alex-blk.alwaysdata.net/logic/contact_to_mail.php"
+const contact_to_mail_url = "https://alex-blk.alwaysdata.net/logic/contact_to_mail.php"
 
 //DEV ADRESS
 // contact_to_mail_url = "http://localhost:3000/logic/contact_to_mail.php"
