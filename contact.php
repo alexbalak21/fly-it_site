@@ -24,7 +24,7 @@ require_once './components/head.php';
         </div>
     </div>
     <!-- Page Header End -->
-
+    <div class="alert-section"></div>
     <!-- Contact Start -->
     <section class="container-xxl py-5 contact-page" id="contact">
         <div class="container">
@@ -77,7 +77,7 @@ require_once './components/head.php';
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea name="message" class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                    <textarea name="message" class="form-control" placeholder="Leave a message here" id="message" style="height: 300px"></textarea>
                                     <div class="valid-feedback">Bon</div>
                                     <div class="invalid-feedback">Entrez votre message (min: 10)</div>
                                     <label for="message">Votre message</label>
