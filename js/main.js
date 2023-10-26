@@ -40,7 +40,7 @@
         }
     })
     $(".back-to-top").click(function () {
-        $("html, body").animate({ scrollTop: 0 }, 500, "easeInOutExpo")
+        $("html, body").animate({scrollTop: 0}, 500, "easeInOutExpo")
         return false
     })
 
@@ -51,7 +51,7 @@
                 $(this).css("width", $(this).attr("aria-valuenow") + "%")
             })
         },
-        { offset: "80%" }
+        {offset: "80%"}
     )
 
     // Testimonials carousel
@@ -62,10 +62,7 @@
         dots: false,
         loop: true,
         nav: true,
-        navText: [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>',
-        ],
+        navText: ['<i class="bi bi-arrow-left"></i>', '<i class="bi bi-arrow-right"></i>'],
         responsive: {
             0: {
                 items: 1,
@@ -96,12 +93,12 @@ $(document).ready(function () {
         dots: true,
         loop: true,
         responsive: {
-            0: { items: 1 },
-            480: { items: 2 },
-            575: { items: 2 },
-            768: { items: 2 },
-            991: { items: 3 },
-            1200: { items: 4 },
+            0: {items: 1},
+            480: {items: 2},
+            575: {items: 2},
+            768: {items: 2},
+            991: {items: 3},
+            1200: {items: 4},
         },
     })
 })
@@ -118,25 +115,6 @@ nav_links.forEach((link) => {
     })
 })
 
-//CHECKING IF CONTACT PAGE IS ALREDY SNET
-const contact_page_form_inputs = document.querySelectorAll(
-    "#contact-page-form input"
-)
-//IF variable form_ existst that means the form has been sent successfuly
-if (typeof contact_page_form !== "undefined") {
-    document.getElementById("nom").value = contact_page_form.name
-    document.getElementById("email").value = contact_page_form.mail
-    document.getElementById("Votre-besoin").value = contact_page_form.need
-    document.getElementById("message").value = contact_page_form.message
-    contact_page_form_inputs.forEach((input) =>
-        input.setAttribute("disabled", "")
-    )
-    document
-        .querySelector("#contact-page-form textarea")
-        .setAttribute("disabled", "")
-    document.getElementById("send-message-btn").setAttribute("disabled", "")
-}
-
 //ACTIVATING THE FIRST LINK
 let page_scroll_position = window.scrollY
 const first_id = sections[0].getAttribute("id")
@@ -149,11 +127,7 @@ window.onscroll = () => {
         const section_Y_start = section.offsetTop
         const section_Y_end = section_Y_start + section.offsetHeight
         const id = section.getAttribute("id")
-        if (
-            page_scroll_position >= section_Y_start &&
-            page_scroll_position < section_Y_end
-        )
-            activate_nav_link("#" + id)
+        if (page_scroll_position >= section_Y_start && page_scroll_position < section_Y_end) activate_nav_link("#" + id)
     })
 }
 

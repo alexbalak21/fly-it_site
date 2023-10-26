@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <?php
+$title = "Créer un profil Consultant";
+require_once './components/head.php';
+?>
+
+    <body>
+        <!-- Spinner Start -->
+        <div
+            id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+        <?php
+    require_once './components/topbar.php';
+    ?>
+
+        <!-- Page Header Start -->
+        <div class="container-fluid page-header wow fadeIn" data-wow-delay="0.1s">
+            <div class="container text-center">
+                <h1 class="display-4 text-white animated slideInDown mb-4">Créer un profil Consultant</h1>
+            </div>
+        </div>
+        <!-- Page Header End -->
+        <section class="container">
+            <h1>Créer Profil</h1>
+            <form action="">
+                <label for=""></label>
+                <input type="text" name="Prénom">
+            </form>
+                    </section>
+
+        <!------------------------------------------------------------ FOOTER------------------------------------------------------------>
+        <?php
+    require_once './components/footer.php';
+
+    // BACK TO THE TOP
+    require_once './components/back_to_the_top.php';
+    ?>
+
+        <?php
+    require_once("./components/jslib.php");
+    ?>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -43,30 +43,46 @@ require_once './components/head.php';
                         <p>
                             Nous vous répondrons dans les plus bref délais.
                         </p>
+
+                        <p id="conact-msg" class="text-center my-1">
+                            <b>
+
+                            </b>
+                        </p>
+
                     </div>
                     <form id="contact-page-form" action="contact.php" method="POST" name="contact-page-form">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input name="name" min="4" type="text" class="form-control" id="nom" placeholder="Votre nom" required />
+
+                                    <input name="name" min="4" type="text" class="form-control" id="nom" placeholder="Votre nom" />
+                                    <div class="valid-feedback">Bon</div>
+                                    <div class="invalid-feedback">Entrez votre nom (min: 4)</div>
                                     <label for="name">Votre nom</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input name="mail" type="email" class="form-control" id="email" placeholder="Votre Email" min="5" required />
+                                    <input name="mail" type="email" class="form-control" id="email" placeholder="Votre Email" />
+                                    <div class="valid-feedback">Bon</div>
+                                    <div class="invalid-feedback">Entrez votre email (exemple@mail.fr)</div>
                                     <label for="email">Votre Email</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input name="need" min="4" type="text" class="form-control" id="Votre-besoin" placeholder="Votre-besoin" required />
+                                    <input name="need" min="4" type="text" class="form-control" id="Votre-besoin" placeholder="Votre-besoin" />
+                                    <div class="valid-feedback">Bon</div>
+                                    <div class="invalid-feedback">Entrez votre besoin (min: 4)</div>
                                     <label for="Votre-besoin">Votre besoin</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea name="message" class="form-control" placeholder="Leave a message here" id="message" style="height: 100px" required></textarea>
+                                    <textarea name="message" class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                    <div class="valid-feedback">Bon</div>
+                                    <div class="invalid-feedback">Entrez votre message (min: 10)</div>
                                     <label for="message">Votre message</label>
                                 </div>
                             </div>
@@ -102,16 +118,12 @@ require_once './components/head.php';
     <?php
     require_once './components/footer.php';
 
-    // BACK TO THE TOP
-    require_once './components/back_to_the_top.php';
-    ?>
-
-    <?php
     require_once("./components/jslib.php");
     ?>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 
 </html>
