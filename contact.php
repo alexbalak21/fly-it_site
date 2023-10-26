@@ -40,13 +40,9 @@ require_once './components/head.php';
                         <p>
                             Nous vous répondrons dans les plus bref délais.
                         </p>
+                        <h5 id="conact-msg" class="text-center my-1">
 
-                        <h6 id="conact-msg" class="text-center my-1">
-                            <b>
-
-                            </b>
-                            </h5>
-
+                        </h5>
                     </div>
                     <form id="contact-page-form" action="contact.php" method="POST" name="contact-page-form">
                         <div class="row g-3">

@@ -1,7 +1,7 @@
 //CONTACT PAGE SCRIPT
 const contact_to_mail_url = "https://alex-blk.alwaysdata.net/logic/contact_to_mail.php"
 
-//DEV ADRESS
+//DEV ADRESS FOR TESTING
 // contact_to_mail_url = "http://localhost:3000/logic/contact_to_mail.php"
 
 //DEFINE ALL THE ELEMENTS NEEDED FOR THE SCRIPT
@@ -9,7 +9,7 @@ const alert_section = document.querySelector(".alert-section")
 const form = document.querySelector("#contact-page-form")
 const contact_page_form_inputs = document.querySelectorAll("#contact-page-form input")
 const textarea = document.querySelector("#contact-page-form textarea")
-const contact_msg = document.querySelector("#conact-msg b")
+const contact_msg = document.querySelector("#conact-msg")
 const send_btn = document.getElementById("send-message-btn")
 
 //COMPOSING THE ALLERT MESSAGES
@@ -28,6 +28,10 @@ const error_alert = `<div class="alert alert-warning     alert-dismissible fade 
 </div>
 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>`
+
+const success_message = "Votre message a bien éré envoyé !"
+const error_message = "L'envoi n'as pas pu aboutir. <br> Vous pouvez nous contaceter par mail."
+const bad_from_msg = "Votre fromulaire est mal rempli."
 
 //TO CHECK IF INPUT IS VALID
 function input_validation(input, min_length = 4) {
@@ -97,18 +101,18 @@ send_btn.addEventListener("click", async (event) => {
             //MESSAGE HAS BEEN SENT BY THE SERVER
             alert_section.innerHTML = success_alert
             contact_msg.classList.add("text-success")
-            contact_msg.innerHTML = `<i class="fa-solid fa-thumbs-up"></i> Votre message a bien éré envoyé !`
+            contact_msg.innerHTML = `<i class="fa-solid fa-thumbs-up"></i> ${success_message}`
             remove_all_fields_validation()
             textarea.style.resize = "none"
             disable_all_fields()
         } else {
             alert_section.innerHTML = error_alert
             contact_msg.classList.add("text-warning")
-            contact_msg.innerHTML = `<i class="fa-solid fa-triangle-exclamation"></i> L'envoi n'as pas pu aboutir. <br> Vous pouvez nous contaceter par mail.`
+            contact_msg.innerHTML = `<i class="fa-solid fa-triangle-exclamation"></i> ${error_message}`
         }
     } else {
         contact_msg.classList.add("text-danger")
-        contact_msg.innerHTML = `<i class="fa-solid fa-circle-exclamation"></i> Votre fromulaire est mal rempli`
+        contact_msg.innerHTML = `<i class="fa-solid fa-circle-exclamation"></i> ${bad_from_msg}`
     }
 })
 const submit_event = form.addEventListener("submit", (event) => event.preventDefault())

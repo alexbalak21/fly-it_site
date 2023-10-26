@@ -1,6 +1,11 @@
 <?php
 //DESTINATION MAIL
+
+//DEV MAIL FOR TESTING
 $to = "alex-blk@alwaysdata.net";
+
+//PROD MAIL
+$to = "recrutement@fly-it.tech";
 
 
 //RECIVES DATA FORM THE CLIENT CHECKS THE DATA AND RESPONDS 202: MAIL SENT /400: DATA IS MISSING/ 403: BAD METHOD / 503: SERVER ERROR 
