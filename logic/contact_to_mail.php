@@ -4,7 +4,7 @@
 //DEV MAIL FOR TESTING
 $to = "alex-blk@alwaysdata.net";
 
-//PROD MAIL
+// PROD MAIL
 // $to = "recrutement@fly-it.tech";
 
 

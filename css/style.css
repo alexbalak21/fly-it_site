@@ -260,6 +260,9 @@
         height: 100%;
         object-fit: cover;
     }
+    .service-item {
+        height: 340px !important;
+    }
 }
 
 @media (max-width: 450px) {
@@ -354,6 +357,7 @@
 /*** Service ***/
 .service-item {
     box-shadow: 0 0 45px rgba(0, 0, 0, 0.06);
+    height: 410px;
 }
 
 /* CLIENTS  */

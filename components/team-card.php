@@ -37,5 +37,3 @@ function team_card(string $img_src, string $name, string $position, string $line
 </div>   
     ";
 }
-
-?>

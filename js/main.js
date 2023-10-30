@@ -147,7 +147,7 @@ let count_done = false
 function activate_client_counter() {
     if (!count_done) {
         count_done = true
-        counters.forEach((count) => counting(count, 100))
+        counters.forEach((count) => counting(count, 50))
     }
 }
 
@@ -164,5 +164,8 @@ function incresse(element, max, time_interval) {
     if (count < max) {
         count++
         element.innerText = count
-    } else clearInterval(time_interval)
+    } else {
+        clearInterval(time_interval)
+        if (element.innerText != max) element.innerText = String(max)
+    }
 }

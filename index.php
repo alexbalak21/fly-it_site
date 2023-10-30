@@ -62,6 +62,7 @@ require_once './components/head.php';
                                 de l'IT.
                             </p>
                         </div>
+
                         <div class="bg-light border-bottom border-5 border-secondary rounded p-4 mb-4">
                             <p class="text-dark mb-2">
                                 Naviguant avec Lumière et Loyauté: Dans le
@@ -246,7 +247,7 @@ require_once './components/head.php';
                     <div class="service-item bg-white text-center p-1 p-xl-3 pb-2">
                         <img class="img-fluid mb-4" src="img/fly-conding.png" alt="" />
                         <h4 class="mb-3">Coding</h4>
-                        <p class="mb-4">
+                        <p class="mb-5">
                             Notre escadron de développement, aguerri aux
                             missions les plus complexes, maîtrise avec brio
                             les voltiges de l'agilité. Avec une précision
@@ -314,7 +315,7 @@ require_once './components/head.php';
                         Nos cients
                     </div>
                 </div>
-                <h1 class="display-6 mb-2" style="font-weight: 400">
+                <h1 class="display-6 mb-2" style="font-weight: 500">
                     Les entreprises et les talents qui nous ont déjà fait confiance.
                 </h1>
             </div>
