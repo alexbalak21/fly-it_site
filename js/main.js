@@ -132,21 +132,37 @@ window.onscroll = () => {
 }
 
 function activate_nav_link(name = "#home") {
+    if (name === "#clients-counter") activate_client_counter()
     nav_links.forEach((link) => {
         link.classList.remove("active")
         if (name === link.href.split("/").pop()) link.classList.add("active")
     })
 }
 
-// nav_links.forEach((link) => {
-//     link.addEventListener("click", (e) => console.log(e))
-//     link.classList.remove("active")
-//     if (
-//         link.href.split("/").pop() === window.location.pathname.split("/").pop()
-//     )
-//         link.classList.add("active")
-//     console.log(link.href)
-// })
-// console.log(window.location.pathname)
+//CLIENTS COUNTER
+const counters = document.querySelectorAll("#clients-counter .count")
 
-// if (window.location.pathname === "/") nav_links[0].classList.add("active")
+let count_done = false
+
+function activate_client_counter() {
+    if (!count_done) {
+        count_done = true
+        counters.forEach((count) => counting(count, 100))
+    }
+}
+
+function counting(element, time = 100) {
+    const inital = Number(element.innerText)
+    element.innerText = 0
+    const interval = setInterval(() => {
+        incresse(element, inital, interval)
+    }, time)
+}
+
+function incresse(element, max, time_interval) {
+    count = Number(element.innerText)
+    if (count < max) {
+        count++
+        element.innerText = count
+    } else clearInterval(time_interval)
+}

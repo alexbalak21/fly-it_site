@@ -178,6 +178,9 @@
     .pill-container {
         text-align: center;
     }
+    #about h1 {
+        text-align: center;
+    }
 }
 
 @media (min-width: 992px) {
@@ -239,7 +242,7 @@
         position: relative;
         min-height: 450px;
     }
-    .contact-page form .btn-container {
+    .contact-page .btn-container {
         text-align: center;
         & span {
             display: block;
@@ -351,6 +354,21 @@
 /*** Service ***/
 .service-item {
     box-shadow: 0 0 45px rgba(0, 0, 0, 0.06);
+}
+
+/* CLIENTS  */
+
+#clients-counter {
+    & .counter {
+        width: 300px !important;
+        & i {
+            font-size: 60px;
+        }
+        & h2 {
+            font-size: 60px !important;
+            color: var(--secondary);
+        }
+    }
 }
 
 /*** Contact ***/

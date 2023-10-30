@@ -241,6 +241,7 @@ require_once './components/head.php';
                 </p>
             </div>
             <div class="row g-4 justify-content-center">
+
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item bg-white text-center p-1 p-xl-3 pb-2">
                         <img class="img-fluid mb-4" src="img/fly-conding.png" alt="" />
@@ -303,6 +304,54 @@ require_once './components/head.php';
     </section>
     <!------------------------------------------------------------ SERVICES END------------------------------------------------------------>
 
+    <!------------------------------------------------------------ COUNTER STERT----------------------------------------------------------->
+
+    <section class="container-xxl py-5" id="clients-counter">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px">
+                <div class="pill-container">
+                    <div class="d-inline-block rounded-pill bg-secondary text-white py-1 px-3 mb-3">
+                        Nos cients
+                    </div>
+                </div>
+                <h1 class="display-6 mb-2" style="font-weight: 400">
+                    Les entreprises et les talents qui nous ont déjà fait confiance.
+                </h1>
+            </div>
+            <div class="row g-3 justify-content-center">
+                <div class="col-lg-3 wow fadeInUp counter" data-wow-delay="0.1s">
+                    <div class="text-center p-1 p-xl-3 pb-2 bg-light">
+                        <i class="fa-solid fa-users text-secondary my-3"></i>
+                        <h3>Consultants</h3>
+                        <h2 class="count">34</h2>
+                    </div>
+                </div>
+                <div class="col-lg-3 wow fadeInUp counter" data-wow-delay="0.3s">
+                    <div class="text-center p-1 p-xl-3 pb-2 bg-light">
+                        <i class="fa-solid fa-handshake text-secondary my-3"></i>
+                        <h3>Clients</h3>
+                        <h2 class="count">10</h2>
+                    </div>
+                </div>
+                <div class="col-lg-3 wow fadeInUp counter" data-wow-delay="0.5s">
+                    <div class="text-center p-1 p-xl-3 pb-2 bg-light">
+                        <i class="fa-solid fa-building text-secondary my-3"></i>
+                        <h3>Missions</h3>
+                        <h2 class="count">6</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!------------------------------------------------------------ COUNTER END----------------------------------------------------------->
 
     <?php
     // TEAM SECTION

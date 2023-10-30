@@ -79,23 +79,24 @@ require_once './components/head.php';
                                     <label for="message">Votre message</label>
                                 </div>
                             </div>
-                            <div class="col-12 btn-container">
-                                <button type="submit" class="btn btn-secondary py-2 px-3 me-3" id="send-message-btn">
-                                    Envoyez votre Message
-                                    <div class="d-inline-flex btn-sm-square bg-white text-secondary rounded-circle ms-2">
-                                        <i class="fa fa-arrow-right"></i>
-                                    </div>
-                                </button>
-                                <span class="mx-4">
-                                    <a class="text-secondary mx-3" href="mailto:recrutement@fly-it.tech">recrutement@fly-it.tech</a>
-                                    <i style="
+
+                        </div>
+                    </form>
+                    <div class="col-12 btn-container mt-3">
+                        <button type="submit" class="btn btn-secondary py-2 px-3 me-3" id="send-message-btn">
+                            Envoyez votre Message
+                            <div class="d-inline-flex btn-sm-square bg-white text-secondary rounded-circle ms-2">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </button>
+                        <span class="mx-4">
+                            <a class="text-secondary mx-3" href="mailto:recrutement@fly-it.tech">recrutement@fly-it.tech</a>
+                            <i style="
                                                 font-size: 24px;
                                                 cursor: pointer;
                                             " class="text-secondary fa-regular fa-copy" onclick="navigator.clipboard.writeText('recrutement@fly-it.tech');"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </form>
+                        </span>
+                    </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 450px">
                     <div class="position-relative rounded overflow-hidden h-100">
