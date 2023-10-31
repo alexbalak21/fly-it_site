@@ -268,8 +268,8 @@ require_once './components/head.php';
                 <div class="col-lg-3 wow fadeInUp counter" data-wow-delay="0.5s">
                     <div class="text-center p-1 p-xl-3 pb-2 bg-light">
                         <i class="fa-solid fa-building text-secondary my-3"></i>
-                        <h3>Missions</h3>
-                        <h2 class="count">6</h2>
+                        <h3>Villes</h3>
+                        <h2 class="count">1</h2>
                     </div>
                 </div>
             </div>
