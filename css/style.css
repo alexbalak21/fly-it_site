@@ -16,6 +16,10 @@
 
 /* GLOBAL TEMPLATE */
 
+h1 {
+    font-weight: 400 !important;
+}
+
 .text-primary {
     color: var(--primary) !important;
 }
@@ -261,7 +265,7 @@
         object-fit: cover;
     }
     .service-item {
-        height: 340px !important;
+        height: 380px !important;
     }
 }
 
@@ -357,7 +361,13 @@
 /*** Service ***/
 .service-item {
     box-shadow: 0 0 45px rgba(0, 0, 0, 0.06);
-    height: 410px;
+    height: 450px;
+
+    & .text-container {
+        height: 250px;
+        display: flex;
+        align-items: center;
+    }
 }
 
 /* CLIENTS  */

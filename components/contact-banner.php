@@ -12,9 +12,7 @@
                         <p class="text-white-50 mb-0">
                             Besoins d'une information ? <br />
                             <br>
-                            Déposez vos coordonnées à notre tour de contrôle, et
-                            notre escadrille prendra contact avec vous en un
-                            battement d'aile.
+                            Laissez-nous vos coordonnées pour en discuter.
                         </p>
                     </div>
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">

@@ -7,9 +7,7 @@
                       <span class="text-white">Fly</span><span class="text-primary">IT</span>
                   </h1>
                   <p>
-                      Une ESN tout droit sortie des hangars lyonnais,
-                      déployant ses ailes en un ballet dévoué au service
-                      de ses clients et de son escadron d'employés.
+                      L'ESN qui fait décoller vos projets.
                   </p>
                   <div class="d-flex pt-2">
                       <a class="btn btn-square me-0" href="https://fr.linkedin.com/company/fly-it-tech/"><i class="fab fa-linkedin-in"></i></a>
@@ -21,10 +19,10 @@
                   <h5 class="text-light mb-4">Adresse</h5>
                   <p>
                       <a href="https://www.google.com/maps/place/55+Av.+Ren%C3%A9+Cassin,+69009+Lyon/data=!4m2!3m1!1s0x47f4eb7496a55165:0x14ce65420b6f18e1?sa=X&ved=2ahUKEwj_k9_axvqBAxWYVqQEHRVRDOcQ8gF6BAgPEAA&ved=2ahUKEwj_k9_axvqBAxWYVqQEHRVRDOcQ8gF6BAgVEAI">
-                          <small><i class="fa fa-map-marker-alt me-2"></i><span>55 ter Av. René Cassin <br />
-                                  &nbsp;&nbsp;&nbsp;&nbsp; 69009
-                                  Lyon</span>
-                          </small></a>
+                          <i class="fa fa-map-marker-alt me-3"></i><span>55 ter Av. René Cassin <br />
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 69009
+                              Lyon</span>
+                      </a>
                   </p>
                   <p>
                       <a href="tel:+33685224002"><i class="fa fa-phone-alt me-3"></i>06.85.22.40.02</a>

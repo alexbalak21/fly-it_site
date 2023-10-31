@@ -13,18 +13,13 @@
                      Notre équipe
                  </div>
              </div>
-             <h1 class="mb-5">
+             <h1 class="mb-5" style="font-weight: 400;">
                  Notre équipe est à votre service pour répondre à vos
                  besoins numériques
              </h1>
 
              <p class="">
-                 Fly'IT, telle une escadrille d'élite conçue par un
-                 pilote vétéran pour des as du manche à balai passionnés,
-                 se compose de 8 aviateurs aux talents singuliers.
-                 Formant une formation en delta, ils combinent maestria
-                 technique, audace créative et un sens du service aussi
-                 précis que le verrouillage d'une cible.
+                 L'équipe de Fly'IT s'appuie sur 8 talents aux compétences complémentaires pour répondre à chacune de vos exigences, quelle que soit leur complexité.
              </p>
          </div>
          <div class="row g-4">
