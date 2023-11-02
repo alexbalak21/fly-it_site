@@ -9,14 +9,12 @@
                                 <div class="row justify-content-center">
                                     <div class="col-lg-7 pt-5">
                                         <h2 class="display-4 text-white mb-3 animated slideInDown">
-                                            L'ESN qui accompagne discrètement
-                                            mais sûrement vos projets vers leurs
-                                            horizons les plus prometteurs
+                                            L'ESN qui fait décoller vos projets
                                         </h2>
                                         <p class="fs-5 text-white-50 mb-5 animated slideInDown">
                                             Vos projets, avec notre
                                             accompagnement, trouvent leur chemin
-                                            vers de nouveaux horizons
+                                            vers de nouveaux horizons.
                                         </p>
                                         <a class="btn btn-primary py-2 px-3 animated slideInDown text-secondary" href="contact.html">
                                             Montez à bord
