@@ -1,0 +1,41 @@
+:root {
+    --primary: #8bfbde;
+    --secondary: #090b40;
+    --mix-prim-sec: #345b75;
+    --light-blue: #007bff;
+    --light-green: #bdfbde;
+    --dark-blue: MediumBlue;
+    --light: #f8f8f9;
+    --dark: #001d23;
+    --gery: #787878;
+    --secondary-color: 9, 11, 64;
+}
+
+section .job {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    & ul {
+        list-style: none;
+    }
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.06);
+
+    & .bg-grey {
+        background-color: var(--gery);
+    }
+    & .badge {
+        text-transform: uppercase;
+    }
+    & .btn {
+        font-size: large !important;
+    }
+}
+@media (max-width: 992px) {
+    section .job {
+        flex-direction: column;
+        & .section {
+            text-align: center;
+        }
+    }
+}
