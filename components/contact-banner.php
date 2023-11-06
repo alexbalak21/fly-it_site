@@ -17,17 +17,21 @@
                     </div>
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                         <div class="h-100 bg-white p-5">
-                            <form>
+                            <div>
                                 <div class="row g-3">
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control bg-light border-0" id="name" placeholder="Your Name" />
+                                            <input type="text" class="form-control bg-light" id="name" placeholder="Votre nom" />
+                                            <div class="valid-feedback">Ok</div>
+                                            <div class="invalid-feedback">Entrez votre nom (min: 4)</div>
                                             <label for="name">Votre nom</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <input type="email" class="form-control bg-light border-0" id="email" placeholder="Your Email" />
+                                            <input type="email" class="form-control bg-light" id="email" placeholder="Votre mail" />
+                                            <div class="valid-feedback">Ok</div>
+                                            <div class="invalid-feedback">Entrez votre email (exemple@mail.fr)</div>
                                             <label for="email">Votre mail</label>
                                         </div>
                                     </div>
@@ -35,12 +39,12 @@
                                         <button class="btn btn-secondary" style="height: 60px">
                                             Montez à bord
                                             <div class="d-inline-flex btn-sm-square bg-white text-secondary rounded-circle ms-2">
-                                                <i class="fa fa-arrow-right"></i>
+                                                <i class="fa-solid fa-plane-departure"></i>
                                             </div>
                                         </button>
                                     </div>
                                 </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>

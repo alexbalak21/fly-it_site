@@ -1,0 +1,1 @@
+CREATE TABLE users (`id` INT PRIMARY KEY auto_increment, `public_id` VARCHAR(255), `firstname` VARCHAR(255), `lastname` VARCHAR(255), `email` VARCHAR(255) NOT NULL, `username` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `connected` BOOL default 0, `last_connected` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP);

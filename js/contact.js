@@ -1,5 +1,10 @@
 //CONTACT PAGE SCRIPT
+
+//TESTING URL
 const contact_to_mail_url = "https://alex-blk.alwaysdata.net/logic/contact_to_mail.php"
+
+//PROD CONTACT URL
+// const contact_to_mail_url = "https://fly-it.tech/logic/contact_to_mail.php"
 
 //DEV ADRESS FOR TESTING
 // contact_to_mail_url = "http://localhost:3000/logic/contact_to_mail.php"

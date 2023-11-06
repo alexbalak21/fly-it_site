@@ -169,3 +169,42 @@ function incresse(element, max, time_interval) {
         if (element.innerText != max) element.innerText = String(max)
     }
 }
+
+//CONTACT BANNER
+
+//TESTING URL
+const contact_to_mail_url = "https://alex-blk.alwaysdata.net/logic/short_contact.php"
+
+//PROD CONTACT URL
+// const contact_to_mail_url = "https://fly-it.tech/logic/short_contact.php"
+
+//DEV ADRESS FOR TESTING
+// contact_to_mail_url = "http://localhost:3000/logic/short_contact.php"
+
+function input_validation(input, min_length = 4) {
+    if (input.value.length < min_length) {
+        input.classList.remove("is-valid")
+        input.classList.add("is-invalid")
+        return false
+    } else {
+        input.classList.remove("is-invalid")
+        input.classList.add("is-valid")
+        contact_msg.innerHTML = ""
+        return true
+    }
+}
+// VALIDATING INPUT AFTER USER LEFT THE FIELD
+function add_validation_on_focus_out(input, min_length = 4) {
+    input.addEventListener("focusout", () => input_validation(input, min_length))
+}
+
+//SEND MESSAGE TO SERVER ON URL
+async function send_mail_to_server() {
+    let formData = new FormData(form)
+    const response = await fetch(contact_to_mail_url, {
+        method: "POST",
+        body: formData,
+    })
+    //RETURN THE STATUS CODE 202: ACCEPTED / 400: MISSING DATA / 503: SERVER ERROR
+    return await response.status
+}

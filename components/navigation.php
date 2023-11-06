@@ -45,7 +45,7 @@
                         </div> -->
         </div>
         <div class="d-none d-lg-flex ms-2">
-            <a class="btn btn-outline-primary py-2 px-3" href="contact.html">
+            <a class="btn btn-outline-primary py-2 px-3" href="/contact.php">
                 Montez à bord
                 <div class="d-inline-flex btn-sm-square bg-primary text-secondary rounded-circle ms-2">
                     <i class="fa fa-arrow-right"></i>

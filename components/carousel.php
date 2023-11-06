@@ -16,7 +16,7 @@
                                             accompagnement, trouvent leur chemin
                                             vers de nouveaux horizons.
                                         </p>
-                                        <a class="btn btn-primary py-2 px-3 animated slideInDown text-secondary" href="contact.html">
+                                        <a class="btn btn-primary py-2 px-3 animated slideInDown text-secondary" href="/contact.php">
                                             Montez à bord
                                             <div class="d-inline-flex btn-sm-square bg-secondary text-primary rounded-circle ms-2">
                                                 <i class="fa fa-arrow-right"></i>
@@ -45,7 +45,7 @@
                                             écrire les chapitres innovants de
                                             demain
                                         </p>
-                                        <a class="btn btn-primary py-2 px-3 animated slideInDown text-secondary" href="contact.html">
+                                        <a class="btn btn-primary py-2 px-3 animated slideInDown text-secondary" href="/contact.php">
                                             Montez à Bord
                                             <div class="d-inline-flex btn-sm-square bg-secondary text-primary rounded-circle ms-2">
                                                 <i class="fa fa-arrow-right"></i>

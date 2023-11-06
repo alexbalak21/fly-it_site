@@ -68,7 +68,7 @@ require_once './components/head.php';
                             </p>
                         </div>
                         <div class="btn-container">
-                            <a class="btn btn-primary py-2 px-3 animated slideInDown text-secondary" href="contact.php">
+                            <a class="btn btn-primary py-2 px-3 animated slideInDown text-secondary" href="/contact.php">
                                 Montez à bord
                                 <div class="d-inline-flex btn-sm-square bg-secondary text-primary rounded-circle ms-2">
                                     <i class="fa fa-arrow-right"></i>
@@ -170,10 +170,9 @@ require_once './components/head.php';
                 </div>
                 <h1 class="display-6 mb-2" style="font-weight: 400">Notre expertise</h1>
                 <p>
-                    Fly'IT, tel un escadron d'élite du numérique, est votre co-pilote dédié pour tous vos projets de
-                    développement aérien. Nos as du joystick, formés aux manœuvres technologiques les plus récentes,
-                    sont prêts à décoller. Avec une cartographie sur mesure, nous alignons nos vols à la parfaite
-                    trajectoire de vos ambitions.
+                    Nous maitrisons des technologies de pointe et sommes en capacité de gérer des projets complexes
+                    tout en vous conseillant stratégiquement. L'adaptabilité et la sécurité des informations sont au
+                    cœur de nos processus innovant.
                 </p>
             </div>
             <div class="row g-4 justify-content-center">
@@ -282,7 +281,7 @@ require_once './components/head.php';
     // TEAM SECTION
     require_once './components/team.php';
 
-    include './components/contact-banner.php';
+    require_once './components/contact-banner.php';
     ?>
 
     <!------------------------------------------------------------ PARTNERS START------------------------------------------------------------>

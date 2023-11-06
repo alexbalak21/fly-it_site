@@ -50,7 +50,7 @@ require_once './components/head.php';
                                 <div class="form-floating">
 
                                     <input name="name" min="4" type="text" class="form-control" id="nom" placeholder="Votre nom" />
-                                    <div class="valid-feedback">Bon</div>
+                                    <div class="valid-feedback">Ok</div>
                                     <div class="invalid-feedback">Entrez votre nom (min: 4)</div>
                                     <label for="name">Votre nom</label>
                                 </div>
@@ -58,7 +58,7 @@ require_once './components/head.php';
                             <div class="col-md-6">
                                 <div class="form-floating">
                                     <input name="mail" type="email" class="form-control" id="email" placeholder="Votre Email" />
-                                    <div class="valid-feedback">Bon</div>
+                                    <div class="valid-feedback">Ok</div>
                                     <div class="invalid-feedback">Entrez votre email (exemple@mail.fr)</div>
                                     <label for="email">Votre Email</label>
                                 </div>
