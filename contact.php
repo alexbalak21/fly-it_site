@@ -49,7 +49,7 @@ require_once './components/head.php';
                             <div class="col-md-6">
                                 <div class="form-floating">
 
-                                    <input name="name" min="4" type="text" class="form-control" id="nom" placeholder="Votre nom" />
+                                    <input name="name" type="text" class="form-control" id="nom" placeholder="Votre nom" />
                                     <div class="valid-feedback">Ok</div>
                                     <div class="invalid-feedback">Entrez votre nom (min: 4)</div>
                                     <label for="name">Votre nom</label>

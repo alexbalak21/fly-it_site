@@ -27,71 +27,21 @@ require_once './components/head.php';
     <!-- Page Header End -->
 
     <section class="container g-3 bg-light">
-        <div class="card-body bg-white mb-3 mt-3 border-start border-4 border-secondary job">
-            <div class="section">
-                <h4>DevOps (F/H)</h4>
-                <ul class="d-lg-flex flex-wrap">
-                    <li class="me-5"><i class="fa-solid fa-location-dot"></i> <span class="ms-1">Lyon</span> </li>
-                    <li class="me-5"><i class="fa-solid fa-file-contract"></i><span class="ms-1">CDI</span></li>
-                    <li class="me-5"><i class="fa-solid fa-clock-rotate-left"></i><span class="ms-1">Temps plein</span></li>
-                </ul>
-            </div>
-            <div class="section">
-                <span class="badge bg-grey">REACT</span>
-                <span class="badge bg-grey">NODE</span>
-                <span class="badge bg-grey">TYPESCTIPT</span>
-                <span class="badge bg-grey">REMOTE</span>
-            </div>
-            <div class="section">
-                <button class="btn btn-secondary px-5 m-3" style="height: 40px">
-                    Postuler
-                </button>
-            </div>
-        </div>
-        <div class="card-body bg-white mb-3 mt-3 border-start border-4 border-secondary job">
-            <div class="section">
-                <h4>Développeur FullStack (F/H)</h4>
-                <ul class="d-lg-flex flex-wrap">
-                    <li class="me-5"><i class="fa-solid fa-location-dot"></i> <span class="ms-1">Lyon</span> </li>
-                    <li class="me-5"><i class="fa-solid fa-file-contract"></i><span class="ms-1">CDI</span></li>
-                    <li class="me-5"><i class="fa-solid fa-clock-rotate-left"></i><span class="ms-1">Temps plein</span></li>
-                </ul>
-            </div>
-            <div class="section">
-                <span class="badge bg-grey">Java</span>
-                <span class="badge bg-grey">Spring</span>
-                <span class="badge bg-grey">SQL</span>
-                <span class="badge bg-grey">Angular</span>
-                <span class="badge bg-grey">Typescript</span>
-            </div>
-            <div class="section">
-                <button class="btn btn-secondary px-5 m-3" style="height: 40px">
-                    Postuler
-                </button>
-            </div>
-        </div>
-        <div class="card-body bg-white mb-3 mt-3 border-start border-4 border-secondary job">
-            <div class="section">
-                <h4>Analyste Fonctionnel (F/H)</h4>
-                <ul class="d-lg-flex flex-wrap">
-                    <li class="me-5"><i class="fa-solid fa-location-dot"></i> <span class="ms-1">Lyon</span> </li>
-                    <li class="me-5"><i class="fa-solid fa-file-contract"></i><span class="ms-1">CDI</span></li>
-                    <li class="me-5"><i class="fa-solid fa-clock-rotate-left"></i><span class="ms-1">Temps plein</span></li>
-                </ul>
-            </div>
-            <div class="section">
-                <span class="badge bg-grey">API</span>
-                <span class="badge bg-grey">Agile</span>
-                <span class="badge bg-grey">SQL</span>
-                <span class="badge bg-grey">Linux</span>
-                <span class="badge bg-grey">TESTING</span>
-            </div>
-            <div class="section">
-                <button class="btn btn-secondary px-5 m-3" style="height: 40px">
-                    Postuler
-                </button>
-            </div>
-        </div>
+        <?php
+        require("./logic/db_interface.php");
+        require("./components/job.php");
+        $jobs = read_jobs();
+        foreach ($jobs as $job) {
+            $techs = json_decode($job['technologies']);
+            $job_card = generate_job_card($job['title'], $job['location'], $job['type'], $job['time'], $job['salary'], $techs);
+            echo $job_card;
+        }
+
+        dummy_card();
+
+
+
+        ?>
 
     </section>
 

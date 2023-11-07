@@ -10,7 +10,7 @@ $conn = null;
 
 function log_error($error = "Error")
 {
-    $logfile = fopen("./logs/errors.log", "w") or die("Unable to open file!");
+    $logfile = fopen("../logs/errors.log", "a") or die("Unable to open file!");
     $new_log = date("d/m/Y  H:i:s") . " - " . $error . "\n \n";
     fwrite($logfile, $new_log);
     fclose($logfile);
@@ -20,7 +20,7 @@ function log_error($error = "Error")
 
 function log_evevnt($msg = "")
 {
-    $event_log = fopen("./logs/events.log", "a") or die("Unable to open file!");
+    $event_log = fopen("../logs/events.log", "a") or die("Unable to open file!");
     $new_log = date("d/m/Y  H:i:s") . " - " . $msg . "\n";
     fwrite($event_log, $new_log);
     fclose($event_log);
@@ -116,4 +116,27 @@ function get_user($login = "")
 {
     $data = fetch_one("SELECT id, first_name, last_name, username, email, role, public_id FROM users WHERE email='$login' OR username='$login'");
     return $data;
+}
+
+function add_job($title = "DevOps (F/H)", $location = "Lyon", $type = "CDI", $time = "Temps plein", $salary = '25k€/y', $user_id = 1, $technologies = "react, javascript, sql", $description = ""): bool
+{
+    $technologies = explode(',', $technologies);
+    $technologies_json = json_encode($technologies);
+    $public_id = uniqid();
+    $querry = "INSERT INTO jobs (title, location, type, time, salary, technologies, description, published_by, public_id) VALUES ('$title', '$location', '$type', '$time', '$salary', '$technologies_json', '$description', '$user_id', '$public_id')";
+    $result = execute_querry($qry = $querry);
+    if ($result) {
+        log_evevnt("JOB ADDED : $title by user_id : $user_id");
+        return true;
+    } else {
+        log_error("FAILED QUERRY : $querry");
+        return false;
+    }
+}
+
+
+function read_jobs()
+{
+    $jobs = fetch_all("SELECT * FROM jobs");
+    return $jobs;
 }

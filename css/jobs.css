@@ -11,6 +11,24 @@
     --secondary-color: 9, 11, 64;
 }
 
+.create-job {
+    & textarea {
+        height: 400px !important;
+    }
+}
+
+.badge-container {
+    & .bg-grey {
+        background-color: var(--gery);
+    }
+    & .badge {
+        text-transform: uppercase;
+        padding: 8px;
+        margin-right: 6px;
+        cursor: pointer;
+    }
+}
+
 section .job {
     display: flex;
     justify-content: space-between;

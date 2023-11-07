@@ -26,5 +26,5 @@ async function request_login(login, password) {
         body: formData,
     })
     //RETURN THE STATUS CODE 400: DATA MISSING / 404: USER NOT FOUND / 403: BAD PASSWORD / 202: ACCEPTED
-    return await response.json()
+    return response.status
 }

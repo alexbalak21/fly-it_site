@@ -1,2 +1,20 @@
-06/11/2023  15:37:58 - FAILED QUERRY : INSERT INTO users (first_name, last_name, username, email, pass_hash, role, public_id) VALUES ('John', 'Doe', 'JohnDoe', 'john.doe@mail.com', '$2y$10$bZX7eB3VLbYvwe9swmk3eOeeYn1iP3NJ6OwGRbcnNJbHCRaY4QBK2', '3', '6548fa4600323')
+07/11/2023  15:13:32 - INSERT INTO jobs (title, location, type, time, technologies, description, published_by, public_id) VALUES ('DevOps', 'Lyon', 'CDI', 'Temps plein', 'REACT,PYTHON,SQL,Angular', 'Description du poste.', '1', '654a460cae338')SQLSTATE[23000]: Integrity constraint violation: 4025 CONSTRAINT `jobs.technologies` failed for `flyit`.`jobs`
+ 
+07/11/2023  15:13:34 - FAILED QUERRY : INSERT INTO jobs (title, location, type, time, technologies, description, published_by, public_id) VALUES ('DevOps', 'Lyon', 'CDI', 'Temps plein', 'REACT,PYTHON,SQL,Angular', 'Description du poste.', '1', '654a460cae338')
+ 
+07/11/2023  15:14:47 - INSERT INTO jobs (title, location, type, time, technologies, description, published_by, public_id) VALUES ('devOps', 'Lyon', 'CDC', 'Tra', 'REACT,JAVA,ANGULAR,SQL', 'decr', '1', '654a4657db9b5')SQLSTATE[23000]: Integrity constraint violation: 4025 CONSTRAINT `jobs.technologies` failed for `flyit`.`jobs`
+ 
+07/11/2023  15:14:47 - FAILED QUERRY : INSERT INTO jobs (title, location, type, time, technologies, description, published_by, public_id) VALUES ('devOps', 'Lyon', 'CDC', 'Tra', 'REACT,JAVA,ANGULAR,SQL', 'decr', '1', '654a4657db9b5')
+ 
+07/11/2023  15:29:05 - INSERT INTO jobs (title, location, type, time, salary technologies, description, published_by, public_id) VALUES ('DevOps', 'Lyon', 'CDI', 'Temps p ' 33, '["RECT","JAVA","PYTHON"]', 'DEcript', '1', '654a49b14ffaf')SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'technologies, description, published_by, public_id) VALUES ('DevOps', 'Lyon',...' at line 1
+ 
+07/11/2023  15:29:05 - FAILED QUERRY : INSERT INTO jobs (title, location, type, time, salary technologies, description, published_by, public_id) VALUES ('DevOps', 'Lyon', 'CDI', 'Temps p ' 33, '["RECT","JAVA","PYTHON"]', 'DEcript', '1', '654a49b14ffaf')
+ 
+07/11/2023  15:32:51 - INSERT INTO jobs (title, location, type, time, salary, technologies, description, published_by, public_id) VALUES ('DevOps', 'Lyon', 'CDI', 'Temps p ' 33, '["RECT","JAVA","PYTHON"]', 'DEcript', '1', '654a4a93d099b')SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '33, '["RECT","JAVA","PYTHON"]', 'DEcript', '1', '654a4a93d099b')' at line 1
+ 
+07/11/2023  15:32:51 - FAILED QUERRY : INSERT INTO jobs (title, location, type, time, salary, technologies, description, published_by, public_id) VALUES ('DevOps', 'Lyon', 'CDI', 'Temps p ' 33, '["RECT","JAVA","PYTHON"]', 'DEcript', '1', '654a4a93d099b')
+ 
+07/11/2023  15:33:24 - INSERT INTO jobs (title, location, type, time, salary, technologies, description, published_by, public_id) VALUES ('devops', 'Lyon', 'CDi', 'Tp' 33, '["REACT","PYTHON","SQL"]', 'Descript', '1', '654a4ab48bfec')SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '33, '["REACT","PYTHON","SQL"]', 'Descript', '1', '654a4ab48bfec')' at line 1
+ 
+07/11/2023  15:33:26 - FAILED QUERRY : INSERT INTO jobs (title, location, type, time, salary, technologies, description, published_by, public_id) VALUES ('devops', 'Lyon', 'CDi', 'Tp' 33, '["REACT","PYTHON","SQL"]', 'Descript', '1', '654a4ab48bfec')
  
