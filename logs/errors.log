@@ -1,0 +1,2 @@
+06/11/2023  15:37:58 - FAILED QUERRY : INSERT INTO users (first_name, last_name, username, email, pass_hash, role, public_id) VALUES ('John', 'Doe', 'JohnDoe', 'john.doe@mail.com', '$2y$10$bZX7eB3VLbYvwe9swmk3eOeeYn1iP3NJ6OwGRbcnNJbHCRaY4QBK2', '3', '6548fa4600323')
+ 
