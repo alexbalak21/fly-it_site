@@ -2,7 +2,7 @@
 <html lang="fr">
 <?php
 // GETTING THE HEADER AND PASSING $title
-$title = "Créer Poste";
+$title = "Créer un User";
 require_once './components/head.php';
 ?>
 
@@ -20,37 +20,53 @@ require_once './components/head.php';
     <div class="container-fluid page-header wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center">
             <h1 class="display-4 text-white animated slideInDown mb-4">
-                Creation de Poste
+                Créer un utilisateur
             </h1>
         </div>
     </div>
     <!-- Page Header End -->
 
     <section class="container d-flex align-items-center justify-content-center">
-        <div class="col-xl-6 col-lg-8 col-md-10 col-sm-12 my-5 create-job">
-            <div class="form-floating mb-3">
-                <input id="title" type="text" class="form-control" placeholder="Titre du poste" />
-                <div class="valid-feedback ms-2">Saved</div>
-                <div class="invalid-feedback ms-2">Entrez le titre du poste</div>
-                <label for="title">Titre du poste</label>
-            </div>
-            <div class="form-floating mb-3">
-                <input id="location" type="text" class="form-control" placeholder="Ville" />
-                <div class="valid-feedback ms-2">Saved</div>
-                <div class="invalid-feedback ms-2">Entrez une ville</div>
-                <label for="location">Ville</label>
-            </div>
-            <div class="form-floating mb-3">
-                <input id="type" type="text" class="form-control" placeholder="Type de contrat (CDI/CDD)" />
-                <div class="valid-feedback ms-2">Saved</div>
-                <div class="invalid-feedback ms-2">Entrez le type de poste</div>
-                <label for="type">Type de contrat (CDI/CDD)</label>
-            </div>
-            <div class="form-floating mb-3">
-                <input id="time" type="text" class="form-control" placeholder="Temps de Travail (Temps plein / partiel)" />
-                <div class="valid-feedback ms-2">Saved</div>
-                <div class="invalid-feedback ms-2">Entrez le temps de travail</div>
-                <label for="name">Temps de Travail (Temps plein / partiel)</label>
+        <div class="col-xl-12 col-lg-8 col-md-10 col-sm-12 my-5 create-job mx-auto">
+            <div class="d-flex flex-wrap justify-content-center">
+                <div class="form-floating mb-3 col-12 col-xl-5 col-md-10 col-sm-12 me-3">
+                    <input id="first_name" type="text" class="form-control" placeholder="Prénom" />
+                    <div class="valid-feedback ms-2">Saved</div>
+                    <div class="invalid-feedback ms-2">Entrez le Prénom</div>
+                    <label for="title">Prénom</label>
+                </div>
+                <div class="form-floating mb-3 col-12 col-xl-5 col-md-10 col-sm-12 me-3">
+                    <input id="last_name" type="text" class="form-control" placeholder="Nom" />
+                    <div class="valid-feedback ms-2">Saved</div>
+                    <div class="invalid-feedback ms-2">Entrez une Nom</div>
+                    <label for="location">Nom</label>
+                </div>
+
+                <div class="form-floating mb-3 col-12 col-xl-5 col-md-10 col-sm-12 me-3">
+                    <input id="username" type="text" class="form-control" placeholder="Username" />
+                    <div class="valid-feedback ms-2">Saved</div>
+                    <div class="invalid-feedback ms-2">Entrez un nom d'utilisateur</div>
+                    <label for="location">Username</label>
+                </div>
+                <div class="form-floating mb-3 col-12 col-xl-5 col-md-10 col-sm-12 me-3">
+                    <input id="email" type="text" class="form-control" placeholder="Email" />
+                    <div class="valid-feedback ms-2">Saved</div>
+                    <div class="invalid-feedback ms-2">Entrez un email</div>
+                    <label for="title">Email</label>
+                </div>
+
+                <div class="form-floating mb-3 col-5 me-3">
+                    <input id="passwrod1" type="password" class="form-control" placeholder="Password" />
+                    <div class="valid-feedback ms-2">Saved</div>
+                    <div class="invalid-feedback ms-2">Pas assez long.</div>
+                    <label for="type">Password</label>
+                </div>
+                <div class="form-floating mb-3 col-5 me-3">
+                    <input id="password2" type="password" class="form-control" placeholder="Confirm password" />
+                    <div class="valid-feedback ms-2">Saved</div>
+                    <div class="invalid-feedback ms-2">Ne correspond pas au premier.</div>
+                    <label for="name">Confirm password</label>
+                </div>
             </div>
             <div class="form-floating mb-3">
                 <input id="salary" type="text" class="form-control" placeholder="Salaire annuel (33k€/an)" />
@@ -135,5 +151,5 @@ require_once './components/head.php';
     ?>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script src="js/jobs.js"></script>
+    <!-- <script src="js/jobs.js"></script> -->
 </body>
