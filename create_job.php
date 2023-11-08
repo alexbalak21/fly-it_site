@@ -91,12 +91,34 @@ require_once './components/head.php';
                     Remetre à zero &nbsp;
                     <i class="fa-regular fa-file"></i>
                 </button>
-
             </div>
-
-
+            <div class="text-center">
+                <button class="btn btn-info my-2" id="reset_from" style="height: 40px">
+                    Preview &nbsp;
+                    <i class="fa-solid fa-eye"></i>
+                </button>
+            </div>
         </div>
+    </section>
 
+    <section class="container" id="preview">
+        <div class="card-body bg-white mb-3 mt-3 border-start border-4 border-secondary job">
+            <div class="section">
+                <h4>DevOps (F/H)</h4>
+                <ul class="d-lg-flex flex-wrap">
+                    <li class="me-4"><i class="fa-solid fa-location-dot"></i> <span class="ms-1">Lyon</span> </li>
+                    <li class="me-4"><i class="fa-solid fa-file-contract"></i><span class="ms-1">CDI</span></li>
+                    <li class="me-4"><i class="fa-solid fa-clock-rotate-left"></i><span class="ms-1">Temps plein</span></li>
+                    <li class="me-4"><i class="fa-solid fa-euro-sign"></i><span class="ms-1">33k€ par an</span></li>
+                </ul>
+            </div>
+            <div class="section"><span class="badge bg-grey mx-1">Typescript</span><span class="badge bg-grey mx-1">REACT</span><span class="badge bg-grey mx-1">EXPRESS</span><span class="badge bg-grey mx-1">PYTHON</span><span class="badge bg-grey mx-1">SQL</span></div>
+            <div class="section">
+                <button class="btn btn-secondary px-5 m-3" style="height: 40px">
+                    Postuler
+                </button>
+            </div>
+        </div>
     </section>
 
 
