@@ -12,6 +12,8 @@ const inputs = document.querySelectorAll(".create-job input")
 const alert_container = document.getElementById("alert-containber")
 const reset_form_btn = document.getElementById("reset_from")
 
+const job_url = "/logic/job.php"
+
 const techs = new Set()
 let form_locked = false
 
@@ -23,8 +25,6 @@ function generate_alert(alert_type = "success", message = "Le poste a bien été
 </div>`
     return alert
 }
-
-const job_url = "/logic/job.php"
 
 add_job_btn.addEventListener("click", async () => {
     const res = await send_create_job_request(
