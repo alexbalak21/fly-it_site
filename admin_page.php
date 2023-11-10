@@ -131,7 +131,7 @@ require_once './components/head.php';
         <h1>Test Table</h1>
         <?php
         require_once("./components/Table.php");
-        $table = new Table(["id", "username", "email", "First name", "Last name"]);
+        $table = new Table($id = "users", ["id", "username", "email", "First name", "Last name"]);
         $table->add_action("modify", "Modify", "success");
         $table->add_action("disable", "Disable", "warning");
         $table->add_action("del", "Delete", "danger");

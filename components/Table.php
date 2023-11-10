@@ -1,11 +1,13 @@
 <?php
 class Table
 {
+    public string $id;
     public array $th_names;
-    public array $actions = [];
+    public array $actions;
 
-    function __construct(array $th_names, array $actions = [])
+    function __construct(string $id = "", array $th_names, array $actions = [])
     {
+        $this->id = $id;
         $this->th_names = $th_names;
         $this->actions = $actions;
     }
@@ -23,7 +25,8 @@ class Table
 
     public function generate(array $rows): string
     {
-        $table = "<table class='table table-striped'>";
+        $id = $this->id;
+        $table = "<table id='table_$id' class='table table-striped'>";
         $table_end = "</table>";
         $thead = self::generate_thead();
         $table .= $thead;
