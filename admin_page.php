@@ -131,10 +131,17 @@ require_once './components/head.php';
         <h1>Test Table</h1>
         <?php
         require_once("./components/Table.php");
-        $table = new Table(["id", "username", "email"], ["mod" => 'Modify', "activ" => "Activate", "delt" => "Delete"]);
-        $render_table = $table->generate([[1, 'alexbalak', 'alex@mail.com'], [2, 'maxpayne', 'max@mail.com']]);
+        $table = new Table(["id", "username", "email", "First name", "Last name"]);
+        $table->add_action("modify", "Modify", "success");
+        $table->add_action("disable", "Disable", "warning");
+        $table->add_action("del", "Delete", "danger");
+        $render_table = $table->generate([[1, 'alexbalak', 'alex@mail.com', "Alex", "Balak"], [2, 'maxpayne', 'max@mail.com', "Max", "Payne"]]);
         echo $render_table;
+
+
         ?>
+
+
 
 
 

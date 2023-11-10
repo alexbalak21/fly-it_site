@@ -2,13 +2,25 @@
 class Table
 {
     public array $th_names;
-    public array $actions;
+    public array $actions = [];
 
     function __construct(array $th_names, array $actions = [])
     {
         $this->th_names = $th_names;
         $this->actions = $actions;
     }
+    public function add_action(string $id, string $name, string $type = "")
+    {
+        $type = strtolower($type);
+        $types = ["primary", "secondary", "success", "danger", "warning", "info", "light", "dark", "link"];
+        if (in_array($type, $types)) {
+            $action = ["id" => $id, "name" => $name, "type" => "-$type"];
+        } else {
+            $action = ["id" => $id, "name" => $name, "type" => ""];
+        }
+        array_push($this->actions, $action);
+    }
+
     public function generate(array $rows): string
     {
         $table = "<table class='table table-striped'>";
@@ -57,8 +69,11 @@ class Table
         $actions = $this->actions;
         if (!empty($actions)) {
             $action_buttons = "";
-            foreach ($actions as $id => $name) {
-                $action_buttons .= "<button type='button' id='$id' class='btn btn-outline-success'>$name</button>";
+            foreach ($actions as $action) {
+                $id = $action["id"];
+                $name = $action["name"];
+                $type_btn = $action["type"];
+                $action_buttons .= "<button type='button' id='$id' class='btn btn-outline$type_btn'>$name</button>";
             }
             $actions_conainer = "<div class='btn-group' role='group' aria-label='Basic outlined example'>$action_buttons</div>";
             $td_actions = "<td>$actions_conainer</td>";
