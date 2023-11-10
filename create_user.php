@@ -87,10 +87,10 @@ require_once './components/head.php';
             <div id="alert-container"></div>
             <div class="btn-container text-center">
                 <button class="btn btn-success my-2" id="add_user">
-                    Ajouter utilisateur &nbsp;
+                    <span>Ajouter utilisateur </span> &nbsp;
                     <i class="fa-solid fa-user-plus"></i>
                 </button>
-                <button class="btn btn-secondary my-2" id="modify" disabled>
+                <button class="btn btn-secondary my-2 d-none" id="modify" disabled>
                     Modifier &nbsp;
                     <i class="fa-solid fa-pen"></i>
                 </button>

@@ -17,9 +17,9 @@ const modify = document.getElementById("modify")
 const create_user_url = "/logic/create_user.php"
 
 //PASSWORD OPERATIONS
-generate.addEventListener("click", () => generate_password())
-see.addEventListener("click", () => show_clear_password())
-copy.addEventListener("click", () => copy_password_to_clipBoard())
+generate.addEventListener("click", generate_password)
+see.addEventListener("click", show_clear_password)
+copy.addEventListener("click", copy_password_to_clipBoard)
 function copy_password_to_clipBoard() {
     if (password.value.length < 5) {
         password.classList.add("is-invalid")
@@ -33,25 +33,32 @@ const fields = [username, email, password, first_name, last_name, generate, copy
 
 //SEND REQUEST TO THE BACKEND TO CREATE USER
 //NEED TO REMOUVE METHOD AND PUT IT APPART FOR REMOUVING EVENTLISTENER
-add_user.addEventListener("click", async () => {
+add_user.addEventListener("click", request_create_user)
+
+async function request_create_user() {
+    alert_container.innerHTML = generate_alert("info", "Requete en cours.")
     const response = await create_user()
-    const code = await response.status
-    const created_user = await response.json()
-    Object.seal(created_user)
-    Object.freeze(created_user)
+    if (response === null) {
+        alert_container.innerHTML = generate_alert("warning", "Il y a eu un probleme avec votre requete, reessayez.")
+        return null
+    }
+    const code = response.status
     if (code !== 201) {
         alert_container.innerHTML = generate_alert(
             "danger",
             "Il y a eu un probleme avec la base de donnés.<br>Contactez l'administrateur du site."
         )
     } else {
+        const created_user = await response.json()
+        Object.seal(created_user)
+        Object.freeze(created_user)
         lock_all_fiields()
         alert_container.innerHTML = generate_alert("success", "L'utilisateur a bien été crée avec succes.")
         modify.addEventListener("click", () => modify_current_user(created_user))
         modify.removeAttribute("disabled")
-        alert_container.innerHTML = ""
+        modify.classList.remove("d-none")
     }
-})
+}
 
 function modify_current_user(user) {
     username.value = user.username
@@ -61,8 +68,13 @@ function modify_current_user(user) {
     first_name.value = user.first_name
     last_name.value = user.last_name
     unlock_all_fields()
+    add_user.removeEventListener("click", request_create_user)
+    add_user.querySelector("span").innerText = "Mettre à jour"
+    add_user.querySelector("i").classList.remove("fa-user-plus")
+    add_user.querySelector("i").classList.add("fa-user-check")
+    alert_container.innerHTML = ""
+    modify.classList.add("d-none")
 }
-
 function unlock_all_fields() {
     fields.forEach((field) => {
         field.classList.remove("is-valid")
@@ -136,7 +148,7 @@ async function create_user() {
         first_name: first_name.value,
         last_name: last_name.value,
     }
-    return await send_create_user_request("POST", request_body)
+    return await send_request_to_server("POST", request_body)
 }
 
 function validate_required_fields() {
@@ -159,7 +171,7 @@ function validate_field(field) {
     }
 }
 
-async function send_create_user_request(method = "POST", data = {}) {
+async function send_request_to_server(method = "POST", data = {}) {
     const response = await fetch(create_user_url, {
         method: "POST",
         headers: {

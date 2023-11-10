@@ -34,3 +34,27 @@
  
 10/11/2023  01:15:38 - FAILED QUERRY : INSERT INTO users (first_name, last_name, username, email, pass_hash, role, public_id) VALUES ('alex', 'balak', 'alexandrebalak', 'alex@mail.com', '$2y$10$gmqHYwPEUBx3wdCTVliDTu2JvlVLGMD.3QrPG8LEad5nGjeno3RYy', 'user', '654d762a15bac')
  
+10/11/2023  02:26:33 - INSERT INTO users (first_name, last_name, username, email, pass_hash, role, public_id) VALUES ('v3lXtf6wJrr#64D7', 'v3lXtf6wJrr#64D7', 'v3lXtf6wJrr#64D7', 'v3lXtf6wJrr#64D7', '$2y$10$fvmvgQG3sFA3H/5jYrd5tOmfZ6KNqztkHpmpdCpo0XwzjVLEWpQA.', 'user', '654d86c98c28e')SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'v3lXtf6wJrr#64D7' for key 'email'
+ 
+10/11/2023  02:26:33 - FAILED QUERRY : INSERT INTO users (first_name, last_name, username, email, pass_hash, role, public_id) VALUES ('v3lXtf6wJrr#64D7', 'v3lXtf6wJrr#64D7', 'v3lXtf6wJrr#64D7', 'v3lXtf6wJrr#64D7', '$2y$10$fvmvgQG3sFA3H/5jYrd5tOmfZ6KNqztkHpmpdCpo0XwzjVLEWpQA.', 'user', '654d86c98c28e')
+ 
+10/11/2023  02:33:10 - INSERT INTO users (first_name, last_name, username, email, pass_hash, role, public_id) VALUES ('euGzzl6xkWRGLUL#euGzzl6xkWRGLUL#', 'euGzzl6xkWRGLUL#euGzzl6xkWRGLUL#', 'euGzzl6xkWRGLUL#', 'euGzzl6xkWRGLUL#', '$2y$10$dGe4GXlFoWcGklLghc65/eibAn5kVrCJSR2ugH8b7jXDY1hIfEm1.', 'user', '654d885684ba9')SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'euGzzl6xkWRGLUL#' for key 'email'
+ 
+10/11/2023  02:33:10 - FAILED QUERRY : INSERT INTO users (first_name, last_name, username, email, pass_hash, role, public_id) VALUES ('euGzzl6xkWRGLUL#euGzzl6xkWRGLUL#', 'euGzzl6xkWRGLUL#euGzzl6xkWRGLUL#', 'euGzzl6xkWRGLUL#', 'euGzzl6xkWRGLUL#', '$2y$10$dGe4GXlFoWcGklLghc65/eibAn5kVrCJSR2ugH8b7jXDY1hIfEm1.', 'user', '654d885684ba9')
+ 
+10/11/2023  02:33:45 - INSERT INTO users (first_name, last_name, username, email, pass_hash, role, public_id) VALUES ('euGzzl6xkWRGLUL#euGzzl6xkWRGLUL#euGzzl6xkWRGLUL#', 'euGzzl6xkWRGLUL#euGzzl6xkWRGLUL#euGzzl6xkWRGLUL#', 'euGzzl6xkWRGLUL#', 'euGzzl6xkWRGLUL#', '$2y$10$9inBib43yHdkRT6vsenc.e5H7A3lIeVuLWon3HEuDISX3qcoqgvzO', 'user', '654d8879e5750')SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'euGzzl6xkWRGLUL#' for key 'email'
+ 
+10/11/2023  02:33:47 - FAILED QUERRY : INSERT INTO users (first_name, last_name, username, email, pass_hash, role, public_id) VALUES ('euGzzl6xkWRGLUL#euGzzl6xkWRGLUL#euGzzl6xkWRGLUL#', 'euGzzl6xkWRGLUL#euGzzl6xkWRGLUL#euGzzl6xkWRGLUL#', 'euGzzl6xkWRGLUL#', 'euGzzl6xkWRGLUL#', '$2y$10$9inBib43yHdkRT6vsenc.e5H7A3lIeVuLWon3HEuDISX3qcoqgvzO', 'user', '654d8879e5750')
+ 
+10/11/2023  02:35:47 - INSERT INTO users (first_name, last_name, username, email, pass_hash, role, public_id) VALUES ('euGzzl6xkWRGLUL#', 'euGzzl6xkWRGLUL#', 'euGzzl6xkWRGLUL#', 'euGzzl6xkWRGLUL#', '$2y$10$hissQEqcrYgswNR1yURx9e6TwZmfytn3fkDOPhv0H.dlcOS3YqxMq', 'user', '654d88f31f02c')SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'euGzzl6xkWRGLUL#' for key 'email'
+ 
+10/11/2023  02:35:47 - FAILED QUERRY : INSERT INTO users (first_name, last_name, username, email, pass_hash, role, public_id) VALUES ('euGzzl6xkWRGLUL#', 'euGzzl6xkWRGLUL#', 'euGzzl6xkWRGLUL#', 'euGzzl6xkWRGLUL#', '$2y$10$hissQEqcrYgswNR1yURx9e6TwZmfytn3fkDOPhv0H.dlcOS3YqxMq', 'user', '654d88f31f02c')
+ 
+10/11/2023  02:37:27 - INSERT INTO users (first_name, last_name, username, email, pass_hash, role, public_id) VALUES ('JTmWDGzDKltGXgRQ', 'JTmWDGzDKltGXgRQ', 'JTmWDGzDKltGXgRQ', 'JTmWDGzDKltGXgRQ', '$2y$10$OzJU7XKPiIMnJBABeYAibeFqiONHP8R4mn69xV8x6mtcO7D9H0cge', 'user', '654d89579ea54')SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'JTmWDGzDKltGXgRQ' for key 'email'
+ 
+10/11/2023  02:37:29 - FAILED QUERRY : INSERT INTO users (first_name, last_name, username, email, pass_hash, role, public_id) VALUES ('JTmWDGzDKltGXgRQ', 'JTmWDGzDKltGXgRQ', 'JTmWDGzDKltGXgRQ', 'JTmWDGzDKltGXgRQ', '$2y$10$OzJU7XKPiIMnJBABeYAibeFqiONHP8R4mn69xV8x6mtcO7D9H0cge', 'user', '654d89579ea54')
+ 
+10/11/2023  02:40:54 - INSERT INTO users (first_name, last_name, username, email, pass_hash, role, public_id) VALUES ('qTtyWRyLkiBEbFCg', 'qTtyWRyLkiBEbFCg', 'qTtyWRyLkiBEbFCg', 'qTtyWRyLkiBEbFCg', '$2y$10$GzqmuH1ez6l4UTt3qi5K.u/ynt158rcsBhVqfxtF3XZ/pt.hp7Eg2', 'user', '654d8a269d03b')SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'qTtyWRyLkiBEbFCg' for key 'email'
+ 
+10/11/2023  02:40:56 - FAILED QUERRY : INSERT INTO users (first_name, last_name, username, email, pass_hash, role, public_id) VALUES ('qTtyWRyLkiBEbFCg', 'qTtyWRyLkiBEbFCg', 'qTtyWRyLkiBEbFCg', 'qTtyWRyLkiBEbFCg', '$2y$10$GzqmuH1ez6l4UTt3qi5K.u/ynt158rcsBhVqfxtF3XZ/pt.hp7Eg2', 'user', '654d8a269d03b')
+ 
