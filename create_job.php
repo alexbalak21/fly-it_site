@@ -77,7 +77,7 @@ require_once './components/head.php';
                 <div class="invalid-feedback ms-2">Entrez une description</div>
                 <label for="name">Description</label>
             </div>
-            <div id="alert-containber"></div>
+            <div id="alert-container"></div>
             <div class="btn-container text-center">
                 <button class="btn btn-secondary my-2" id="add_job">
                     Ajouter Poste &nbsp;

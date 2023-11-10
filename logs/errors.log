@@ -18,3 +18,19 @@
  
 07/11/2023  15:33:26 - FAILED QUERRY : INSERT INTO jobs (title, location, type, time, salary, technologies, description, published_by, public_id) VALUES ('devops', 'Lyon', 'CDi', 'Tp' 33, '["REACT","PYTHON","SQL"]', 'Descript', '1', '654a4ab48bfec')
  
+10/11/2023  01:10:44 - INSERT INTO users (first_name, last_name, username, email, pass_hash, role, public_id) VALUES ('alex', 'balak', 'alexandre', 'alex@mail.com', '$2y$10$FN8gXZI9tKdIKTN3Cb5khOmOMu55BG.CufU2UigEsmLHRmE/bFjGK', 'user', '654d75046bbfb')SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'alex@mail.com' for key 'email'
+ 
+10/11/2023  01:10:46 - FAILED QUERRY : INSERT INTO users (first_name, last_name, username, email, pass_hash, role, public_id) VALUES ('alex', 'balak', 'alexandre', 'alex@mail.com', '$2y$10$FN8gXZI9tKdIKTN3Cb5khOmOMu55BG.CufU2UigEsmLHRmE/bFjGK', 'user', '654d75046bbfb')
+ 
+10/11/2023  01:11:44 - INSERT INTO users (first_name, last_name, username, email, pass_hash, role, public_id) VALUES ('alex', 'balak', 'alexandre', 'alex@mail.com', '$2y$10$otw2MkGOyZzkskrWSB3/2OyXiiUzYTPTdKY2aItqnUF8Q9p76vNPe', 'user', '654d7540078d7')SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'alex@mail.com' for key 'email'
+ 
+10/11/2023  01:11:45 - FAILED QUERRY : INSERT INTO users (first_name, last_name, username, email, pass_hash, role, public_id) VALUES ('alex', 'balak', 'alexandre', 'alex@mail.com', '$2y$10$otw2MkGOyZzkskrWSB3/2OyXiiUzYTPTdKY2aItqnUF8Q9p76vNPe', 'user', '654d7540078d7')
+ 
+10/11/2023  01:12:30 - INSERT INTO users (first_name, last_name, username, email, pass_hash, role, public_id) VALUES ('alex', 'balak', 'alexandrebalak', 'alex@mail.com', '$2y$10$/OTKHE/aE3Ahw8S3TlRR0.ocpIZeJ3CXuU7VGxHo7hc/EeIRTtAsW', 'user', '654d756ea61e1')SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'alex@mail.com' for key 'email'
+ 
+10/11/2023  01:12:32 - FAILED QUERRY : INSERT INTO users (first_name, last_name, username, email, pass_hash, role, public_id) VALUES ('alex', 'balak', 'alexandrebalak', 'alex@mail.com', '$2y$10$/OTKHE/aE3Ahw8S3TlRR0.ocpIZeJ3CXuU7VGxHo7hc/EeIRTtAsW', 'user', '654d756ea61e1')
+ 
+10/11/2023  01:15:38 - INSERT INTO users (first_name, last_name, username, email, pass_hash, role, public_id) VALUES ('alex', 'balak', 'alexandrebalak', 'alex@mail.com', '$2y$10$gmqHYwPEUBx3wdCTVliDTu2JvlVLGMD.3QrPG8LEad5nGjeno3RYy', 'user', '654d762a15bac')SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'alex@mail.com' for key 'email'
+ 
+10/11/2023  01:15:38 - FAILED QUERRY : INSERT INTO users (first_name, last_name, username, email, pass_hash, role, public_id) VALUES ('alex', 'balak', 'alexandrebalak', 'alex@mail.com', '$2y$10$gmqHYwPEUBx3wdCTVliDTu2JvlVLGMD.3QrPG8LEad5nGjeno3RYy', 'user', '654d762a15bac')
+ 

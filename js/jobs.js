@@ -9,7 +9,7 @@ const badge_container = document.querySelector(".create-job .badge-container")
 const job_description = document.getElementById("job_description")
 const add_job_btn = document.getElementById("add_job")
 const inputs = document.querySelectorAll(".create-job input")
-const alert_container = document.getElementById("alert-containber")
+const alert_container = document.getElementById("alert-container")
 const reset_form_btn = document.getElementById("reset_from")
 
 const job_url = "/logic/job.php"
