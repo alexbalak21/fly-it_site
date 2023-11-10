@@ -1,0 +1,42 @@
+:root {
+    --primary: #8bfbde;
+    --secondary: #090b40;
+    --mix-prim-sec: #345b75;
+    --light-blue: #007bff;
+    --light-green: #bdfbde;
+    --dark-blue: MediumBlue;
+    --light: #f8f8f9;
+    --dark: #001d23;
+    --gery: #787878;
+    --secondary-color: 9, 11, 64;
+}
+
+.dropdown-item:focus,
+.dropdown-item:active {
+    background-color: var(--secondary) !important;
+    color: var(--light) !important;
+}
+
+.navbar {
+    padding-bottom: 0 !important;
+}
+
+.user-menu {
+    & .btn,
+    li {
+        width: 180px !important;
+        text-align: center;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .user-menu {
+        background-color: var(--dark);
+        width: 99.5% !important;
+        text-align: center !important;
+        & .dropdown-menu {
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

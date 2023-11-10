@@ -48,6 +48,12 @@ h1 {
     color: #ffffff80 !important;
 }
 
+/* DROPDOW */
+
+.dropdown-menu li a:focus ~ li {
+    background-color: red !important;
+}
+
 /*** Spinner ***/
 #spinner {
     opacity: 0;
