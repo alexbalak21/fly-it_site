@@ -32,7 +32,7 @@ function copy_password_to_clipBoard() {
 const fields = [username, email, password, first_name, last_name, generate, copy, see, add_user]
 
 //SEND REQUEST TO THE BACKEND TO CREATE USER
-
+//NEED TO REMOUVE METHOD AND PUT IT APPART FOR REMOUVING EVENTLISTENER
 add_user.addEventListener("click", async () => {
     const response = await create_user()
     const code = await response.status
