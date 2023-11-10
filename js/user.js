@@ -32,7 +32,6 @@ function copy_password_to_clipBoard() {
 const fields = [username, email, password, first_name, last_name, generate, copy, see, add_user]
 
 //SEND REQUEST TO THE BACKEND TO CREATE USER
-//NEED TO REMOUVE METHOD AND PUT IT APPART FOR REMOUVING EVENTLISTENER
 add_user.addEventListener("click", request_create_user)
 
 async function request_create_user() {
@@ -52,6 +51,8 @@ async function request_create_user() {
         const created_user = await response.json()
         Object.seal(created_user)
         Object.freeze(created_user)
+        password.type = "password"
+        add_user.classList.add("d-none")
         lock_all_fiields()
         alert_container.innerHTML = generate_alert("success", "L'utilisateur a bien été crée avec succes.")
         modify.addEventListener("click", () => modify_current_user(created_user))
@@ -69,6 +70,9 @@ function modify_current_user(user) {
     last_name.value = user.last_name
     unlock_all_fields()
     add_user.removeEventListener("click", request_create_user)
+    add_user.classList.remove("btn-succes")
+    add_user.classList.add("btn-info")
+    add_user.classList.remove("d-none")
     add_user.querySelector("span").innerText = "Mettre à jour"
     add_user.querySelector("i").classList.remove("fa-user-plus")
     add_user.querySelector("i").classList.add("fa-user-check")
