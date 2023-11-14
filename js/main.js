@@ -136,6 +136,7 @@ function activate_nav_link(name = "#home") {
     nav_links.forEach((link) => {
         link.classList.remove("active")
         if (name === link.href.split("/").pop()) link.classList.add("active")
+        if (link.innerText === "Techs") activate_client_counter()
     })
 }
 

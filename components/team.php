@@ -79,7 +79,7 @@
                  <div class="team-item position-relative">
                      <img class="img-fluid rounded-circle border border-primary" src="img/fatima.jpg" alt="Fati" />
                      <div class="team-text bg-light text-center p-4">
-                         <h5>Fatima ZAHRA EL HAJJL</h5>
+                         <h5>Fatima ZAHRA EL HAJJI</h5>
                          <p>Business developper</p>
                          <div class="team-social text-center">
                              <a class="btn btn-square" href="https://www.linkedin.com/in/fatima-zahra-el-hajji-8b6b03181/"><i class="fab fa-linkedin-in"></i></a>
